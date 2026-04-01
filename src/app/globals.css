@@ -1,26 +1,113 @@
 @import "tailwindcss";
 
+/* PGI Custom Theme */
+@theme {
+  /* Primary Colors (Dark Theme) */
+  --color-pgi-black: #0a0a0a;
+  --color-pgi-dark: #141414;
+  --color-pgi-charcoal: #1a1a1a;
+
+  /* Accent Colors (Gold) */
+  --color-pgi-gold: #C9A962;
+  --color-pgi-gold-light: #D4B872;
+  --color-pgi-gold-dark: #B89952;
+
+  /* Supporting Colors */
+  --color-pgi-burgundy: #722F37;
+
+  /* Grays */
+  --color-pgi-gray-100: #F5F5F5;
+  --color-pgi-gray-300: #D4D4D4;
+  --color-pgi-gray-500: #737373;
+  --color-pgi-gray-700: #404040;
+  --color-pgi-gray-900: #171717;
+
+  /* Fonts */
+  --font-display: var(--font-playfair);
+  --font-body: var(--font-inter);
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --background: #0a0a0a;
+  --foreground: #F5F5F5;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-body), system-ui, sans-serif;
+}
+
+/* Typography utilities */
+.font-display {
+  font-family: var(--font-display), Georgia, serif;
+}
+
+.font-body {
+  font-family: var(--font-body), system-ui, sans-serif;
+}
+
+/* Gold gradient text */
+.text-gradient-gold {
+  background: linear-gradient(135deg, #D4B872 0%, #C9A962 50%, #B89952 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Gold accent line */
+.gold-line {
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(90deg, #C9A962, #D4B872);
+}
+
+/* Selection color */
+::selection {
+  background-color: rgba(201, 169, 98, 0.3);
+  color: #F5F5F5;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #404040;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #C9A962;
+}
+
+/* Focus styles */
+*:focus-visible {
+  outline: 2px solid #C9A962;
+  outline-offset: 2px;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
