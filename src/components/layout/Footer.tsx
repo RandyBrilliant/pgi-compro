@@ -1,6 +1,6 @@
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/routing';
-import { Mail, MapPin, Phone, Instagram, Linkedin, Facebook } from "lucide-react";
+import { Mail, MapPin, Phone } from "lucide-react";
 import { Container, Logo } from "@/components/ui";
 import { siteConfig } from "@/lib/config";
 import { businessUnits } from "@/lib/data/business-units";
@@ -14,7 +14,6 @@ const navItems = [
 ] as const;
 
 export function Footer() {
-  const currentYear = new Date().getFullYear();
   const t = useTranslations('common');
 
   return (
@@ -28,42 +27,6 @@ export function Footer() {
             <p className="text-pgi-gray-300 mb-6">
               {t('footer.description')}
             </p>
-            {/* Social Links */}
-            <div className="flex gap-4">
-              {siteConfig.social.instagram && (
-                <a
-                  href={siteConfig.social.instagram}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-pgi-gray-500 hover:text-pgi-gold transition-colors"
-                  aria-label="Instagram"
-                >
-                  <Instagram size={20} />
-                </a>
-              )}
-              {siteConfig.social.linkedin && (
-                <a
-                  href={siteConfig.social.linkedin}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-pgi-gray-500 hover:text-pgi-gold transition-colors"
-                  aria-label="LinkedIn"
-                >
-                  <Linkedin size={20} />
-                </a>
-              )}
-              {siteConfig.social.facebook && (
-                <a
-                  href={siteConfig.social.facebook}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-pgi-gray-500 hover:text-pgi-gold transition-colors"
-                  aria-label="Facebook"
-                >
-                  <Facebook size={20} />
-                </a>
-              )}
-            </div>
           </div>
 
           {/* Quick Links */}
@@ -143,7 +106,7 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="py-6 border-t border-pgi-charcoal flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-pgi-gray-500">
           <p>
-            © {currentYear} {siteConfig.name}. {t('footer.rights')}.
+            © 2009 {siteConfig.name}. {t('footer.rights')}.
           </p>
           <div className="flex gap-6">
             <Link href="/privacy" className="hover:text-pgi-gold transition-colors">

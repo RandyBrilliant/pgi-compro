@@ -27,7 +27,6 @@ export function ContactForm() {
     message: "",
   });
   const [errors, setErrors] = useState<FormErrors>({});
-  const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   const validateForm = (): boolean => {
@@ -56,12 +55,23 @@ export function ContactForm() {
 
     if (!validateForm()) return;
 
-    setIsSubmitting(true);
+    // Create mailto link with form data
+    const mailtoSubject = formData.subject || "Inquiry from Website";
+    const mailtoBody = `
+Name: ${formData.name}
+Email: ${formData.email}
+Phone: ${formData.phone || "Not provided"}
 
-    // Simulate form submission - replace with actual API call
-    await new Promise((resolve) => setTimeout(resolve, 1500));
+Message:
+${formData.message}
+    `.trim();
 
-    setIsSubmitting(false);
+    const mailtoUrl = `mailto:ptpgi2009@gmail.com?subject=${encodeURIComponent(mailtoSubject)}&body=${encodeURIComponent(mailtoBody)}`;
+    
+    // Open email client
+    window.location.href = mailtoUrl;
+
+    // Show success message
     setIsSubmitted(true);
     setFormData({
       name: "",
@@ -93,7 +103,7 @@ export function ContactForm() {
           Thank You!
         </h3>
         <p className="text-pgi-gray-300 mb-6">
-          Your message has been sent successfully. We'll get back to you soon.
+          Your email client will open with a pre-filled message. We'll get back to you soon.
         </p>
         <Button
           variant="secondary"
@@ -163,17 +173,10 @@ export function ContactForm() {
       <Button
         type="submit"
         size="lg"
-        disabled={isSubmitting}
         className="w-full md:w-auto"
       >
-        {isSubmitting ? (
-          "Sending..."
-        ) : (
-          <>
-            Send Message
-            <Send size={18} />
-          </>
-        )}
+        Send Message
+        <Send size={18} />
       </Button>
     </form>
   );

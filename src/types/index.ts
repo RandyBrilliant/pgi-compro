@@ -64,7 +64,7 @@ export interface SiteConfig {
   description: string;
   url: string;
   contact: ContactInfo;
-  social: SocialLinks;
+  social?: SocialLinks; // Made optional since company may not have social media yet
 }
 
 export interface NavItem {

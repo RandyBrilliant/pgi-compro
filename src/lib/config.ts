@@ -14,11 +14,11 @@ export const siteConfig: SiteConfig = {
     city: "Kota Medan 20155",
     country: "Indonesia",
   },
-  social: {
-    instagram: "https://instagram.com/pgigroup",
-    linkedin: "https://linkedin.com/company/pgigroup",
-    facebook: "https://facebook.com/pgigroup",
-  },
+  // social: {
+  //   instagram: "https://instagram.com/pgigroup",
+  //   linkedin: "https://linkedin.com/company/pgigroup", 
+  //   facebook: "https://facebook.com/pgigroup",
+  // },
 };
 
 export const navigation: NavItem[] = [
