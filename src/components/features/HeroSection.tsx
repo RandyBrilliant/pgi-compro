@@ -1,11 +1,15 @@
 "use client";
 
+import { useTranslations } from 'next-intl';
+import Image from "next/image";
 import { motion } from "motion/react";
 import { ArrowRight, ChevronDown } from "lucide-react";
 import { Button, Container } from "@/components/ui";
-import { siteConfig } from "@/lib/config";
 
 export function HeroSection() {
+  const t = useTranslations('home.hero');
+  const tCommon = useTranslations('common');
+
   const scrollToContent = () => {
     window.scrollTo({
       top: window.innerHeight,
@@ -15,18 +19,21 @@ export function HeroSection() {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image Placeholder */}
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: "url('/images/hero/hero-bg.jpg')",
-        }}
-      >
-        {/* Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-pgi-black/70 via-pgi-black/50 to-pgi-black" />
+      {/* Background Image with Unsplash fallback */}
+      <div className="absolute inset-0">
+        <Image
+          src="https://images.unsplash.com/photo-1617570874287-db95c419c432?w=1920&q=80"
+          alt="Classical Roman statue on Sant'Angelo Bridge representing imperial power and wisdom"
+          fill
+          className="object-cover grayscale"
+          priority
+          quality={75}
+        />
+        {/* Dark overlay for text readability */}
+        <div className="absolute inset-0 bg-gradient-to-b from-pgi-black/75 via-pgi-black/60 to-pgi-black" />
       </div>
 
-      {/* Fallback gradient if no image */}
+      {/* Fallback gradient if image fails to load */}
       <div className="absolute inset-0 bg-gradient-to-br from-pgi-black via-pgi-dark to-pgi-charcoal -z-10" />
 
       {/* Content */}
@@ -38,7 +45,7 @@ export function HeroSection() {
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             <span className="inline-block mb-6 text-sm font-medium uppercase tracking-widest text-pgi-gold">
-              Welcome to {siteConfig.shortName}
+              {t('subtitle')}
             </span>
           </motion.div>
 
@@ -48,9 +55,7 @@ export function HeroSection() {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="font-display text-4xl font-bold leading-tight text-white sm:text-5xl md:text-6xl lg:text-7xl"
           >
-            Building Excellence,
-            <br />
-            <span className="text-gradient-gold">Shaping the Future</span>
+            {t('title')}
           </motion.h1>
 
           <motion.p
@@ -59,7 +64,7 @@ export function HeroSection() {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="mt-8 text-lg text-pgi-gray-300 sm:text-xl max-w-2xl mx-auto"
           >
-            {siteConfig.description}
+            {t('description')}
           </motion.p>
 
           <motion.div
@@ -69,11 +74,11 @@ export function HeroSection() {
             className="mt-10 flex flex-col sm:flex-row gap-4 justify-center"
           >
             <Button size="lg" href="/projects">
-              View Our Projects
+              {tCommon('buttons.viewProjects')}
               <ArrowRight size={20} />
             </Button>
             <Button size="lg" variant="secondary" href="/about">
-              Learn More
+              {tCommon('buttons.learnMore')}
             </Button>
           </motion.div>
         </div>

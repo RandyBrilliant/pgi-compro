@@ -1,19 +1,32 @@
+import { useTranslations } from 'next-intl';
 import Image from "next/image";
 import type { Client } from "@/types";
-import { Container, Section, SectionTitle } from "@/components/ui";
+import { Container, Section, SectionTitle, SectionBackground } from "@/components/ui";
+import { clients as clientsData } from "@/lib/data/values";
 
 interface ClientLogosProps {
-  clients: Client[];
+  clients?: Client[];
 }
 
-export function ClientLogos({ clients }: ClientLogosProps) {
+export function ClientLogos({ clients = clientsData }: ClientLogosProps) {
+  const t = useTranslations('home.clients');
+
   return (
-    <Section className="bg-pgi-black">
-      <Container>
+    <Section className="bg-pgi-black relative overflow-hidden">
+      {/* Subtle geometric pattern background */}
+      <SectionBackground
+        src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&q=80"
+        alt="Abstract geometric pattern"
+        opacity={4}
+        overlayDirection="radial"
+        grayscale
+      />
+      
+      <Container className="relative z-10">
         <SectionTitle
-          subtitle="Trusted Partners"
-          title="Our Valued Clients"
-          description="Building lasting relationships with industry leaders"
+          subtitle={t('subtitle')}
+          title={t('title')}
+          description={t('description')}
         />
 
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center">
@@ -42,6 +55,7 @@ export function ClientLogos({ clients }: ClientLogosProps) {
 
 // Placeholder version when no images are available
 export function ClientLogosPlaceholder() {
+  const t = useTranslations('home.clients');
   const placeholderClients = [
     "Client 1",
     "Client 2",
@@ -52,12 +66,21 @@ export function ClientLogosPlaceholder() {
   ];
 
   return (
-    <Section className="bg-pgi-black">
-      <Container>
+    <Section className="bg-pgi-black relative overflow-hidden">
+      {/* Subtle geometric pattern background */}
+      <SectionBackground
+        src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&q=80"
+        alt="Abstract geometric pattern"
+        opacity={4}
+        overlayDirection="radial"
+        grayscale
+      />
+      
+      <Container className="relative z-10">
         <SectionTitle
-          subtitle="Trusted Partners"
-          title="Our Valued Clients"
-          description="Building lasting relationships with industry leaders"
+          subtitle={t('subtitle')}
+          title={t('title')}
+          description={t('description')}
         />
 
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center">

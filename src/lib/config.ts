@@ -3,15 +3,15 @@ import type { NavItem, SiteConfig, StatItem } from "@/types";
 export const siteConfig: SiteConfig = {
   name: "PT. Property Group Imperium",
   shortName: "PGI",
-  tagline: "Building Excellence, Shaping the Future",
+  tagline: "We Build with Pride & Integrity",
   description:
-    "PT. Property Group Imperium is a leading property development and management company delivering excellence in real estate, construction, heavy machinery, and property development.",
+    "Founded in 2006, PT. Property Group Imperium is a leading property developer in Medan building quality residential and commercial properties with innovative concepts.",
   url: "https://pgigroup.com",
   contact: {
-    email: "info@pgigroup.com",
-    phone: "+62 21 xxxx xxxx",
-    address: "Jl. Example Street No. 123",
-    city: "Jakarta",
+    email: "ptpgi2009@gmail.com",
+    phone: "+62 812 6127 0707",
+    address: "Jl. Abdul Hakim No. 97, Kel. Padang Bulan Selayang I, Kec. Medan Selayang",
+    city: "Kota Medan 20155",
     country: "Indonesia",
   },
   social: {
@@ -30,8 +30,8 @@ export const navigation: NavItem[] = [
 ];
 
 export const stats: StatItem[] = [
-  { value: 15, suffix: "+", label: "Years of Experience" },
-  { value: 200, suffix: "+", label: "Projects Completed" },
-  { value: 50, suffix: "+", label: "Professional Team" },
-  { value: 100, suffix: "+", label: "Happy Clients" },
+  { value: 18, suffix: "+", label: "Years of Experience" }, // Founded 2006
+  { value: 16, suffix: "+", label: "Projects Completed" },
+  { value: 13, suffix: "+", label: "Partnerships" },
+  { value: 1000, suffix: "+", label: "Happy Clients" },
 ];

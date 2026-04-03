@@ -1,3 +1,4 @@
+import { useTranslations } from 'next-intl';
 import { Shield, Award, Lightbulb, Heart } from "lucide-react";
 import type { CompanyValue } from "@/types";
 
@@ -15,6 +16,7 @@ const iconMap = {
 
 export function ValueCard({ value, index = 0 }: ValueCardProps) {
   const Icon = iconMap[value.icon as keyof typeof iconMap] || Shield;
+  const t = useTranslations(`about.values.${value.id}`);
 
   return (
     <div className="group p-6 rounded-lg bg-pgi-dark border border-pgi-charcoal transition-all duration-300 hover:border-pgi-gold/30 hover:shadow-lg hover:shadow-pgi-gold/5">
@@ -29,11 +31,11 @@ export function ValueCard({ value, index = 0 }: ValueCardProps) {
       </div>
 
       <h3 className="font-display text-xl font-semibold text-pgi-gray-100 mb-3">
-        {value.title}
+        {t('title')}
       </h3>
 
       <p className="text-pgi-gray-300 leading-relaxed">
-        {value.description}
+        {t('description')}
       </p>
     </div>
   );

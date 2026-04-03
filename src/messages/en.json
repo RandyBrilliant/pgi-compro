@@ -1,0 +1,203 @@
+{
+  "common": {
+    "nav": {
+      "home": "Home",
+      "about": "About",
+      "services": "Services",
+      "projects": "Projects",
+      "contact": "Contact"
+    },
+    "buttons": {
+      "learnMore": "Learn More",
+      "getInTouch": "Get in Touch",
+      "viewAll": "View All",
+      "sendMessage": "Send Message",
+      "readMore": "Read More",
+      "exploreServices": "Explore Our Services",
+      "viewProjects": "View Our Projects",
+      "contactUs": "Contact Us"
+    },
+    "footer": {
+      "quickLinks": "Quick Links",
+      "ourServices": "Our Services",
+      "contactUs": "Contact Us",
+      "rights": "All rights reserved",
+      "about": "About PT. Property Group Imperium",
+      "description": "Founded in 2006, PT. Property Group Imperium is a leading property developer in Medan committed to building quality properties with innovative concepts.",
+      "followUs": "Follow Us"
+    },
+    "language": {
+      "indonesian": "Bahasa Indonesia",
+      "english": "English",
+      "selectLanguage": "Select Language"
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "We Build with Pride & Integrity",
+      "subtitle": "Imperium Property Group - Established 2006",
+      "description": "Imperium Property Group is one of the largest property developers in Indonesia, located in Medan, North Sumatra."
+    },
+    "businessUnits": {
+      "subtitle": "What We Do",
+      "title": "Our Business Units",
+      "description": "Four specialized divisions working together to deliver comprehensive property solutions"
+    },
+    "stats": {
+      "yearsExperience": "Years of Experience",
+      "projectsCompleted": "Projects Completed",
+      "partnerships": "Strategic Partnerships",
+      "happyClients": "Happy Clients"
+    },
+    "projects": {
+      "subtitle": "Our Work",
+      "title": "Featured Projects",
+      "description": "Showcasing our commitment to excellence through landmark developments"
+    },
+    "clients": {
+      "subtitle": "Trusted Partners",
+      "title": "Our Partners",
+      "description": "Proud to collaborate with leading organizations across Indonesia"
+    },
+    "cta": {
+      "title": "Ready to Start Your Next Project?",
+      "description": "Let's discuss how PGI can help bring your vision to life with our comprehensive property solutions."
+    }
+  },
+  "about": {
+    "meta": {
+      "title": "About Us - PT. Property Group Imperium",
+      "description": "Learn about PT. Property Group Imperium, Indonesia's leading property development and management company with four specialized business divisions."
+    },
+    "hero": {
+      "title": "About PT. Property Group Imperium",
+      "description": "A legacy of excellence in Indonesian real estate"
+    },
+    "story": {
+      "title": "About Us",
+      "subtitle": "Imperium (Latin: Imperium)",
+      "definition": "Defined as a great empire occupying a vast geographical area. Under the leadership of a powerful ruler, leading a solid team in their nation.",
+      "content": "Founded in 2006, PT. Property Group Imperium (PGI) is a property company located in Medan - North Sumatra. As a leading and prestigious property developer, the company's main focus is to build & develop quality residential and commercial properties.\n\nAs a property sector developer, we are committed to creating environmentally friendly projects oriented towards customer satisfaction. We consistently strive to improve our strategies in meeting relevant and evolving property needs.\n\nSince our initial projects, PT. Property Group Imperium has consistently demonstrated a commitment to being the best in the property industry."
+    },
+    "vision": {
+      "title": "Vision",
+      "description": "To become one of the best and most trusted developers initiating leading residences in the property industry, with high investment value."
+    },
+    "mission": {
+      "title": "Mission",
+      "description": "To initiate and build projects that are \"Conceptual & Innovative\" according to the era and generation following the times."
+    },
+    "values": {
+      "title": "Business Values",
+      "subtitle": "What Drives Us",
+      "integrity": {
+        "title": "Integrity",
+        "description": "With a reputation for ethical behavior built over more than a decade, our company culture is one that treats everyone equally with respect, trust, and honor without exception."
+      },
+      "authenticity": {
+        "title": "Authenticity",
+        "description": "Our company welcomes new ideas, innovative projects, and unique perspectives that inspire creativity and smart property solutions."
+      },
+      "longterm": {
+        "title": "Long-Term Focus",
+        "description": "Our long-term investment horizon stems from a combination of patience and a consistency mindset. We value detailed planning and a future that involves positive environmental impact."
+      },
+      "quality": {
+        "title": "Quality",
+        "description": "Quality cares about details, recognizing the importance of superior design and professionalism in management. We set properties with the highest targets and best-in-class service."
+      }
+    },
+    "team": {
+      "title": "Our Team",
+      "subtitle": "Meet the Leaders",
+      "description": "Our experienced leadership team brings decades of combined expertise in real estate development and management"
+    }
+  },
+  "businessUnits": {
+    "property": {
+      "name": "PGI Property",
+      "tagline": "Excellence in Property Management",
+      "description": "PGI Property specializes in comprehensive property management services, ensuring your assets are maintained to the highest standards. We handle everything from tenant relations to maintenance, maximizing your property's value and returns.",
+      "services": {
+        "management": "Property Management",
+        "tenantRelations": "Tenant Relations",
+        "maintenance": "Maintenance Services",
+        "assetManagement": "Asset Management",
+        "leaseAdmin": "Lease Administration"
+      }
+    },
+    "contractor": {
+      "name": "PGI Contractor",
+      "tagline": "Building Your Vision",
+      "description": "PGI Contractor delivers exceptional construction services with a focus on quality, safety, and timely delivery. From commercial buildings to residential complexes, we bring your architectural visions to life.",
+      "services": {
+        "commercial": "Commercial Construction",
+        "residential": "Residential Construction",
+        "renovation": "Renovation & Remodeling",
+        "projectManagement": "Project Management",
+        "designBuild": "Design-Build Services"
+      }
+    },
+    "machinery": {
+      "name": "PGI Machinery",
+      "tagline": "Powering Your Projects",
+      "description": "PGI Machinery provides a comprehensive fleet of heavy equipment for rent. Our well-maintained machinery and experienced operators ensure your construction projects run smoothly and efficiently.",
+      "services": {
+        "equipmentRental": "Heavy Equipment Rental",
+        "craneServices": "Crane Services",
+        "excavatorRental": "Excavator Rental",
+        "equipmentMaintenance": "Equipment Maintenance",
+        "operatorServices": "Operator Services"
+      }
+    },
+    "developer": {
+      "name": "PGI Developer",
+      "tagline": "Shaping Tomorrow's Landscape",
+      "description": "PGI Developer creates innovative real estate projects that blend modern design with functional excellence. We develop premium residential and commercial properties that set new standards in luxury living.",
+      "services": {
+        "residential": "Residential Development",
+        "commercial": "Commercial Development",
+        "mixedUse": "Mixed-Use Projects",
+        "landAcquisition": "Land Acquisition",
+        "investmentAnalysis": "Investment Analysis"
+      }
+    }
+  },
+  "contact": {
+    "meta": {
+      "title": "Contact Us - PT. Property Group Imperium",
+      "description": "Get in touch with PT. Property Group Imperium. Contact us for inquiries about property management, construction, machinery rental, or property development services."
+    },
+    "title": "Contact Us",
+    "subtitle": "Get in Touch",
+    "description": "Have a question or ready to start your next project? We'd love to hear from you.",
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Your name",
+      "email": "Email",
+      "emailPlaceholder": "your.email@example.com",
+      "phone": "Phone",
+      "phonePlaceholder": "+62 xxx xxxx xxxx",
+      "subject": "Subject",
+      "subjectPlaceholder": "How can we help you?",
+      "message": "Message",
+      "messagePlaceholder": "Tell us about your project or inquiry...",
+      "send": "Send Message",
+      "sending": "Sending...",
+      "success": "Message sent successfully! We'll get back to you soon.",
+      "error": "Failed to send message. Please try again."
+    },
+    "info": {
+      "office": "Office Location",
+      "email": "Email",
+      "phone": "Phone",
+      "hours": "Business Hours",
+      "hoursValue": "Monday - Friday: 9:00 AM - 5:00 PM"
+    }
+  },
+  "seo": {
+    "companyName": "PT. Property Group Imperium",
+    "tagline": "We Build with Pride & Integrity",
+    "defaultDescription": "Founded in 2006, PT. Property Group Imperium is a leading property developer in Medan building quality residential and commercial properties with innovative concepts."
+  }
+}

@@ -11,7 +11,7 @@ interface ProjectCardProps {
 export function ProjectCard({ project }: ProjectCardProps) {
   return (
     <Link
-      href={`/projects/${project.slug}`}
+      href={`/projects/${project.slug}` as any}
       className="group relative overflow-hidden rounded-lg bg-pgi-dark border border-pgi-charcoal transition-all duration-500 hover:border-pgi-gold/50"
     >
       {/* Image */}

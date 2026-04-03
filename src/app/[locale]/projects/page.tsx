@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Container, Section, SectionTitle } from "@/components/ui";
 import { ProjectCard } from "@/components/features";
 import { FadeIn, StaggerContainer, StaggerItem } from "@/components/animations";
@@ -17,8 +18,24 @@ export default function ProjectsPage() {
   return (
     <>
       {/* Hero Section */}
-      <Section className="bg-pgi-black pt-32">
-        <Container>
+      <Section className="bg-pgi-black pt-32 relative overflow-hidden">
+        {/* Subtle background image */}
+        <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
+          <div className="absolute inset-0" style={{ opacity: 0.1 }}>
+            <Image
+              src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&q=80"
+              alt="Modern architecture skyline"
+              fill
+              className="object-cover grayscale"
+              sizes="100vw"
+              priority
+              quality={60}
+            />
+          </div>
+          <div className="absolute inset-0 bg-gradient-to-b from-pgi-black via-transparent to-pgi-black" />
+        </div>
+        
+        <Container className="relative z-10">
           <FadeIn className="max-w-3xl mx-auto text-center">
             <span className="inline-block mb-4 text-sm font-medium uppercase tracking-widest text-pgi-gold">
               Our Portfolio

@@ -1,55 +1,79 @@
 import type { Metadata } from "next";
+import { useTranslations } from 'next-intl';
+import { getTranslations } from 'next-intl/server';
 import Image from "next/image";
 import { Target, Eye } from "lucide-react";
-import { Container, Section, SectionTitle } from "@/components/ui";
-import { ValueCard, TeamMemberCardPlaceholder } from "@/components/features";
+import { Container, Section, SectionTitle, SectionBackground } from "@/components/ui";
+import { ValueCard, TeamMemberCard } from "@/components/features";
 import { FadeIn, SlideIn, StaggerContainer, StaggerItem } from "@/components/animations";
 import { companyValues, visionMission } from "@/lib/data/values";
 import { team, getTeamByLevel } from "@/lib/data/team";
-import { siteConfig } from "@/lib/config";
 
-export const metadata: Metadata = {
-  title: "About Us",
-  description: `Learn about ${siteConfig.name} - our vision, mission, values, and the team behind our success in property development and management.`,
+type Props = {
+  params: Promise<{ locale: string }>;
 };
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'about.meta' });
+  
+  return {
+    title: t('title'),
+    description: t('description'),
+  };
+}
 
 export default function AboutPage() {
   const leadership = getTeamByLevel(1);
   const directors = getTeamByLevel(2);
   const managers = getTeamByLevel(3);
+  const t = useTranslations('about');
 
   return (
     <>
       {/* Hero Section */}
-      <Section className="bg-pgi-black pt-32">
-        <Container>
+      <Section className="bg-pgi-black pt-32 relative overflow-hidden">
+        {/* Subtle background image */}
+        <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
+          <div className="absolute inset-0" style={{ opacity: 0.07 }}>
+            <Image
+              src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=1920&q=80"
+              alt="Professional workspace"
+              fill
+              className="object-cover grayscale"
+              sizes="100vw"
+              priority
+              quality={60}
+            />
+          </div>
+          <div className="absolute inset-0 bg-gradient-to-b from-pgi-black via-transparent to-pgi-black" />
+        </div>
+        
+        <Container className="relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <SlideIn direction="left">
               <span className="inline-block mb-4 text-sm font-medium uppercase tracking-widest text-pgi-gold">
-                About Us
+                {t('hero.title')}
               </span>
               <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-pgi-gray-100 mb-6">
-                Building Excellence Since Day One
+                {t('hero.title')}
               </h1>
               <p className="text-lg text-pgi-gray-300 mb-6">
-                PT. Property Group Imperium is a leading property development and management 
-                company committed to delivering excellence in every project we undertake. 
-                With a strong foundation built on integrity, innovation, and dedication, 
-                we have established ourselves as a trusted name in the Indonesian real estate industry.
+                {t('story.content')}
               </p>
               <p className="text-pgi-gray-300">
-                Our integrated approach combines property management, construction, 
-                heavy machinery services, and development to provide comprehensive 
-                solutions for our clients' needs.
+                {t('hero.description')}
               </p>
             </SlideIn>
 
             <SlideIn direction="right" delay={0.2}>
               <div className="relative aspect-[4/3] rounded-lg overflow-hidden">
-                {/* Placeholder for about image */}
-                <div className="absolute inset-0 bg-gradient-to-br from-pgi-dark to-pgi-charcoal flex items-center justify-center">
-                  <span className="text-pgi-gray-500 text-lg">About Image Placeholder</span>
-                </div>
+                <Image
+                  src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&h=600&fit=crop"
+                  alt="Modern office building - REPLACE: About company image"
+                  fill
+                  className="object-cover"
+                />
                 {/* Decorative border */}
                 <div className="absolute -bottom-4 -right-4 w-full h-full border-2 border-pgi-gold/30 rounded-lg -z-10" />
               </div>
@@ -59,8 +83,17 @@ export default function AboutPage() {
       </Section>
 
       {/* Vision & Mission Section */}
-      <Section className="bg-pgi-dark">
-        <Container>
+      <Section className="bg-pgi-dark relative overflow-hidden">
+        {/* Subtle abstract background */}
+        <SectionBackground
+          src="https://images.unsplash.com/photo-1557682250-33bd709cbe85?w=1920&q=80"
+          alt="Abstract gradient background"
+          opacity={6}
+          overlayDirection="radial"
+          grayscale={false}
+        />
+        
+        <Container className="relative z-10">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             {/* Vision */}
             <FadeIn>
@@ -69,10 +102,10 @@ export default function AboutPage() {
                   <Eye size={28} />
                 </div>
                 <h2 className="font-display text-2xl font-semibold text-pgi-gray-100 mb-4">
-                  Our Vision
+                  {t('vision.title')}
                 </h2>
                 <p className="text-pgi-gray-300 leading-relaxed">
-                  {visionMission.vision}
+                  {t('vision.description')}
                 </p>
               </div>
             </FadeIn>
@@ -84,16 +117,11 @@ export default function AboutPage() {
                   <Target size={28} />
                 </div>
                 <h2 className="font-display text-2xl font-semibold text-pgi-gray-100 mb-4">
-                  Our Mission
+                  {t('mission.title')}
                 </h2>
-                <ul className="space-y-3">
-                  {visionMission.mission.map((item, index) => (
-                    <li key={index} className="flex items-start gap-3 text-pgi-gray-300">
-                      <span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-pgi-gold mt-2" />
-                      {item}
-                    </li>
-                  ))}
-                </ul>
+                <p className="text-pgi-gray-300 text-lg leading-relaxed">
+                  {t('mission.description')}
+                </p>
               </div>
             </FadeIn>
           </div>
@@ -105,9 +133,9 @@ export default function AboutPage() {
         <Container>
           <FadeIn>
             <SectionTitle
-              subtitle="What Drives Us"
-              title="Our Core Values"
-              description="The principles that guide everything we do"
+              subtitle={t('values.subtitle')}
+              title={t('values.title')}
+              description={t('team.description')}
             />
           </FadeIn>
 
@@ -122,13 +150,22 @@ export default function AboutPage() {
       </Section>
 
       {/* Team Section */}
-      <Section className="bg-pgi-dark">
-        <Container>
+      <Section className="bg-pgi-dark relative overflow-hidden">
+        {/* Subtle office background */}
+        <SectionBackground
+          src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=1920&q=80"
+          alt="Modern office space"
+          opacity={5}
+          overlayDirection="both"
+          grayscale
+        />
+        
+        <Container className="relative z-10">
           <FadeIn>
             <SectionTitle
-              subtitle="The People Behind PGI"
-              title="Our Leadership Team"
-              description="Meet the experienced professionals driving our success"
+              subtitle={t('team.subtitle')}
+              title={t('team.title')}
+              description={t('team.description')}
             />
           </FadeIn>
 
@@ -136,7 +173,7 @@ export default function AboutPage() {
           <FadeIn className="mb-16">
             <div className="flex justify-center">
               {leadership.map((member) => (
-                <TeamMemberCardPlaceholder key={member.id} member={member} />
+                <TeamMemberCard key={member.id} member={member} />
               ))}
             </div>
           </FadeIn>
@@ -148,7 +185,7 @@ export default function AboutPage() {
             </h3>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-8 max-w-3xl mx-auto">
               {directors.map((member) => (
-                <TeamMemberCardPlaceholder key={member.id} member={member} />
+                <TeamMemberCard key={member.id} member={member} />
               ))}
             </div>
           </FadeIn>
@@ -160,7 +197,7 @@ export default function AboutPage() {
             </h3>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               {managers.map((member) => (
-                <TeamMemberCardPlaceholder key={member.id} member={member} />
+                <TeamMemberCard key={member.id} member={member} />
               ))}
             </div>
           </FadeIn>

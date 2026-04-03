@@ -1,11 +1,21 @@
-import Link from "next/link";
+import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/routing';
 import { Mail, MapPin, Phone, Instagram, Linkedin, Facebook } from "lucide-react";
 import { Container, Logo } from "@/components/ui";
-import { siteConfig, navigation } from "@/lib/config";
+import { siteConfig } from "@/lib/config";
 import { businessUnits } from "@/lib/data/business-units";
+
+const navItems = [
+  { key: 'home', href: '/' },
+  { key: 'about', href: '/about' },
+  { key: 'services', href: '/services' },
+  { key: 'projects', href: '/projects' },
+  { key: 'contact', href: '/contact' },
+] as const;
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
+  const t = useTranslations('common');
 
   return (
     <footer className="bg-pgi-dark border-t border-pgi-charcoal">
@@ -16,7 +26,7 @@ export function Footer() {
           <div className="lg:col-span-1">
             <Logo className="mb-6" />
             <p className="text-pgi-gray-300 mb-6">
-              {siteConfig.tagline}
+              {t('footer.description')}
             </p>
             {/* Social Links */}
             <div className="flex gap-4">
@@ -59,16 +69,16 @@ export function Footer() {
           {/* Quick Links */}
           <div>
             <h3 className="font-display text-lg font-semibold text-pgi-gray-100 mb-6">
-              Quick Links
+              {t('footer.quickLinks')}
             </h3>
             <ul className="space-y-3">
-              {navigation.map((item) => (
+              {navItems.map((item) => (
                 <li key={item.href}>
                   <Link
                     href={item.href}
                     className="text-pgi-gray-300 hover:text-pgi-gold transition-colors"
                   >
-                    {item.label}
+                    {t(`nav.${item.key}`)}
                   </Link>
                 </li>
               ))}
@@ -78,13 +88,13 @@ export function Footer() {
           {/* Business Units */}
           <div>
             <h3 className="font-display text-lg font-semibold text-pgi-gray-100 mb-6">
-              Our Services
+              {t('footer.ourServices')}
             </h3>
             <ul className="space-y-3">
               {businessUnits.map((unit) => (
                 <li key={unit.id}>
                   <Link
-                    href={`/services/${unit.id}`}
+                    href={`/services/${unit.id}` as any}
                     className="text-pgi-gray-300 hover:text-pgi-gold transition-colors"
                   >
                     {unit.name}
@@ -97,7 +107,7 @@ export function Footer() {
           {/* Contact Info */}
           <div>
             <h3 className="font-display text-lg font-semibold text-pgi-gray-100 mb-6">
-              Contact Us
+              {t('footer.contactUs')}
             </h3>
             <ul className="space-y-4">
               <li className="flex items-start gap-3 text-pgi-gray-300">
@@ -133,7 +143,7 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="py-6 border-t border-pgi-charcoal flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-pgi-gray-500">
           <p>
-            © {currentYear} {siteConfig.name}. All rights reserved.
+            © {currentYear} {siteConfig.name}. {t('footer.rights')}.
           </p>
           <div className="flex gap-6">
             <Link href="/privacy" className="hover:text-pgi-gold transition-colors">

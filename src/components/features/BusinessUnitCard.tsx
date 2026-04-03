@@ -21,7 +21,7 @@ export function BusinessUnitCard({ unit, index = 0 }: BusinessUnitCardProps) {
 
   return (
     <Link
-      href={`/services/${unit.id}`}
+      href={`/services/${unit.id}` as any}
       className={cn(
         "group relative overflow-hidden rounded-lg bg-pgi-dark border border-pgi-charcoal",
         "transition-all duration-500 hover:border-pgi-gold/50 hover:shadow-xl hover:shadow-pgi-gold/10"

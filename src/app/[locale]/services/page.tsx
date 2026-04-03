@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { ArrowRight } from "lucide-react";
-import { Container, Section, SectionTitle, Button } from "@/components/ui";
+import Image from "next/image";
+import { Container, Section, SectionTitle, Button, SectionBackground } from "@/components/ui";
 import { BusinessUnitCard } from "@/components/features";
 import { FadeIn, StaggerContainer, StaggerItem } from "@/components/animations";
 import { businessUnits } from "@/lib/data/business-units";
@@ -15,8 +16,24 @@ export default function ServicesPage() {
   return (
     <>
       {/* Hero Section */}
-      <Section className="bg-pgi-black pt-32">
-        <Container>
+      <Section className="bg-pgi-black pt-32 relative overflow-hidden">
+        {/* Subtle background image */}
+        <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
+          <div className="absolute inset-0" style={{ opacity: 0.08 }}>
+            <Image
+              src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=1920&q=80"
+              alt="Professional office space"
+              fill
+              className="object-cover grayscale"
+              sizes="100vw"
+              priority={false}
+              quality={60}
+            />
+          </div>
+          <div className="absolute inset-0 bg-gradient-to-b from-pgi-black via-transparent to-pgi-black" />
+        </div>
+        
+        <Container className="relative z-10">
           <FadeIn className="max-w-3xl mx-auto text-center">
             <span className="inline-block mb-4 text-sm font-medium uppercase tracking-widest text-pgi-gold">
               Our Services
@@ -46,8 +63,17 @@ export default function ServicesPage() {
       </Section>
 
       {/* CTA Section */}
-      <Section className="bg-pgi-dark">
-        <Container>
+      <Section className="bg-pgi-dark relative overflow-hidden">
+        {/* Subtle construction background */}
+        <SectionBackground
+          src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&q=80"
+          alt="Construction site"
+          opacity={6}
+          overlayDirection="radial"
+          grayscale
+        />
+        
+        <Container className="relative z-10">
           <FadeIn className="max-w-2xl mx-auto text-center">
             <h2 className="font-display text-3xl md:text-4xl font-bold text-pgi-gray-100 mb-6">
               Need a Custom Solution?

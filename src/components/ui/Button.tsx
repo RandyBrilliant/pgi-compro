@@ -1,5 +1,5 @@
 import { type VariantProps, cva } from "class-variance-authority";
-import Link from "next/link";
+import { Link } from '@/i18n/routing';
 import type { ComponentProps } from "react";
 import { cn } from "@/lib/utils";
 

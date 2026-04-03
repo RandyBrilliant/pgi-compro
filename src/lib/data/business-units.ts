@@ -14,7 +14,7 @@ export const businessUnits: BusinessUnit[] = [
       "Asset Management",
       "Lease Administration",
     ],
-    image: "/images/business-units/property.jpg",
+    image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&h=600&fit=crop", // REPLACE: Property management building
     icon: "Building2",
   },
   {
@@ -30,7 +30,7 @@ export const businessUnits: BusinessUnit[] = [
       "Project Management",
       "Design-Build Services",
     ],
-    image: "/images/business-units/contractor.jpg",
+    image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800&h=600&fit=crop", // REPLACE: Construction site
     icon: "HardHat",
   },
   {
@@ -46,7 +46,7 @@ export const businessUnits: BusinessUnit[] = [
       "Equipment Maintenance",
       "Operator Services",
     ],
-    image: "/images/business-units/machinery.jpg",
+    image: "https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=800&h=600&fit=crop", // REPLACE: Heavy machinery/excavator
     icon: "Cog",
   },
   {
@@ -62,7 +62,7 @@ export const businessUnits: BusinessUnit[] = [
       "Land Acquisition",
       "Investment Analysis",
     ],
-    image: "/images/business-units/developer.jpg",
+    image: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&h=600&fit=crop", // REPLACE: Modern development/luxury building
     icon: "Building",
   },
 ];

@@ -1,18 +1,27 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/routing';
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
-import { Logo, Container, Button } from "@/components/ui";
-import { navigation } from "@/lib/config";
+import { Logo, Container, Button, LocaleSwitcher } from "@/components/ui";
 import { cn } from "@/lib/utils";
+
+const navItems = [
+  { key: 'home', href: '/' },
+  { key: 'about', href: '/about' },
+  { key: 'services', href: '/services' },
+  { key: 'projects', href: '/projects' },
+  { key: 'contact', href: '/contact' },
+] as const;
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const pathname = usePathname();
+  const t = useTranslations('common');
 
   useEffect(() => {
     const handleScroll = () => {
@@ -42,7 +51,7 @@ export function Header() {
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex lg:items-center lg:gap-8">
-            {navigation.map((item) => (
+            {navItems.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
@@ -53,11 +62,12 @@ export function Header() {
                     : "text-pgi-gray-300"
                 )}
               >
-                {item.label}
+                {t(`nav.${item.key}`)}
               </Link>
             ))}
+            <LocaleSwitcher />
             <Button size="sm" href="/contact">
-              Get in Touch
+              {t('buttons.getInTouch')}
             </Button>
           </div>
 
@@ -85,7 +95,7 @@ export function Header() {
           >
             <Container>
               <div className="py-6 space-y-4">
-                {navigation.map((item) => (
+                {navItems.map((item) => (
                   <Link
                     key={item.href}
                     href={item.href}
@@ -96,11 +106,14 @@ export function Header() {
                         : "text-pgi-gray-300"
                     )}
                   >
-                    {item.label}
+                    {t(`nav.${item.key}`)}
                   </Link>
                 ))}
+                <div className="pt-4 border-t border-pgi-charcoal">
+                  <LocaleSwitcher />
+                </div>
                 <Button className="w-full mt-4" href="/contact">
-                  Get in Touch
+                  {t('buttons.getInTouch')}
                 </Button>
               </div>
             </Container>

@@ -1,18 +1,22 @@
+import { useTranslations } from 'next-intl';
 import { ArrowRight } from "lucide-react";
-import { Container, Section, SectionTitle, Button } from "@/components/ui";
+import { Container, Section, SectionTitle, Button, SectionBackground } from "@/components/ui";
 import {
   HeroSection,
   BusinessUnitCard,
   ProjectCard,
   StatsSection,
-  ClientLogosPlaceholder,
+  ClientLogos,
 } from "@/components/features";
 import { FadeIn, StaggerContainer, StaggerItem } from "@/components/animations";
-import { businessUnits } from "@/lib/data/business-units";
+import { useBusinessUnits } from "@/lib/data/business-units-i18n";
 import { getFeaturedProjects } from "@/lib/data/projects";
 
 export default function HomePage() {
   const featuredProjects = getFeaturedProjects();
+  const businessUnits = useBusinessUnits();
+  const t = useTranslations('home');
+  const tCommon = useTranslations('common');
 
   return (
     <>
@@ -24,9 +28,9 @@ export default function HomePage() {
         <Container>
           <FadeIn>
             <SectionTitle
-              subtitle="What We Do"
-              title="Our Business Units"
-              description="Four specialized divisions working together to deliver comprehensive property solutions"
+              subtitle={t('businessUnits.subtitle')}
+              title={t('businessUnits.title')}
+              description={t('businessUnits.description')}
             />
           </FadeIn>
 
@@ -48,9 +52,9 @@ export default function HomePage() {
         <Container>
           <FadeIn>
             <SectionTitle
-              subtitle="Portfolio"
-              title="Featured Projects"
-              description="Discover our latest achievements in property development and construction"
+              subtitle={t('projects.subtitle')}
+              title={t('projects.title')}
+              description={t('projects.description')}
             />
           </FadeIn>
 
@@ -64,7 +68,7 @@ export default function HomePage() {
 
           <FadeIn className="mt-12 text-center">
             <Button variant="secondary" href="/projects">
-              View All Projects
+              {tCommon('buttons.viewProjects')}
               <ArrowRight size={18} />
             </Button>
           </FadeIn>
@@ -72,35 +76,43 @@ export default function HomePage() {
       </Section>
 
       {/* Client Logos Section */}
-      <ClientLogosPlaceholder />
+      <ClientLogos />
 
       {/* CTA Section */}
       <Section className="bg-pgi-dark relative overflow-hidden">
-        {/* Background decoration */}
-        <div className="absolute inset-0 opacity-5">
+        {/* Subtle cityscape background */}
+        <SectionBackground
+          src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=1920&q=80"
+          alt="City skyline at night"
+          opacity={10}
+          overlayDirection="radial"
+          grayscale
+        />
+        
+        {/* Background decoration - gold orbs */}
+        <div className="absolute inset-0 opacity-5 pointer-events-none">
           <div className="absolute top-0 left-1/4 w-96 h-96 bg-pgi-gold rounded-full blur-3xl" />
           <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-pgi-gold rounded-full blur-3xl" />
         </div>
 
-        <Container className="relative">
+        <Container className="relative z-10">
           <FadeIn className="max-w-3xl mx-auto text-center">
             <span className="inline-block mb-4 text-sm font-medium uppercase tracking-widest text-pgi-gold">
-              Let's Build Together
+              {t('cta.title')}
             </span>
             <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-pgi-gray-100 mb-6">
-              Ready to Start Your Next Project?
+              {t('cta.title')}
             </h2>
             <p className="text-lg text-pgi-gray-300 mb-8">
-              Whether you're looking for property management, construction services,
-              or investment opportunities, we're here to help turn your vision into reality.
+              {t('cta.description')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" href="/contact">
-                Get in Touch
+                {tCommon('buttons.getInTouch')}
                 <ArrowRight size={20} />
               </Button>
               <Button size="lg" variant="secondary" href="/about">
-                Learn More About Us
+                {tCommon('buttons.learnMore')}
               </Button>
             </div>
           </FadeIn>

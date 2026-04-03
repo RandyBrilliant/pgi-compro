@@ -1,8 +1,9 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { useTranslations } from 'next-intl';
 import { useInView, useReducedMotion } from "motion/react";
-import { Container, Section, SectionTitle } from "@/components/ui";
+import { Container, Section, SectionTitle, SectionBackground } from "@/components/ui";
 import { stats } from "@/lib/config";
 import type { StatItem } from "@/types";
 
@@ -61,23 +62,42 @@ function AnimatedCounter({ value, suffix = "", duration = 2000 }: AnimatedCounte
 
 interface StatCardProps {
   stat: StatItem;
+  label: string;
 }
 
-function StatCard({ stat }: StatCardProps) {
+function StatCard({ stat, label }: StatCardProps) {
   return (
     <div className="text-center p-6">
       <div className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-pgi-gold mb-2">
         <AnimatedCounter value={stat.value} suffix={stat.suffix} />
       </div>
-      <div className="text-pgi-gray-300">{stat.label}</div>
+      <div className="text-pgi-gray-300">{label}</div>
     </div>
   );
 }
 
 export function StatsSection() {
+  const t = useTranslations('home.stats');
+
+  const statLabels = [
+    t('yearsExperience'),
+    t('projectsCompleted'),
+    t('partnerships'),
+    t('happyClients'),
+  ];
+
   return (
-    <Section className="bg-pgi-dark border-y border-pgi-charcoal">
-      <Container>
+    <Section className="bg-pgi-dark border-y border-pgi-charcoal relative overflow-hidden">
+      {/* Subtle background image */}
+      <SectionBackground
+        src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&q=75"
+        alt="Modern architecture background"
+        opacity={8}
+        overlayDirection="radial"
+        grayscale
+      />
+      
+      <Container className="relative z-10">
         <SectionTitle
           subtitle="Our Impact"
           title="Numbers That Speak"
@@ -85,8 +105,8 @@ export function StatsSection() {
         />
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          {stats.map((stat) => (
-            <StatCard key={stat.label} stat={stat} />
+          {stats.map((stat, index) => (
+            <StatCard key={stat.label} stat={stat} label={statLabels[index]} />
           ))}
         </div>
       </Container>
