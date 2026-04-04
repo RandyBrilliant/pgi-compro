@@ -90,6 +90,7 @@
     "values": {
       "title": "Nilai Bisnis",
       "subtitle": "Yang Mendorong Kami",
+      "description": "Prinsip yang membentuk cara kami membangun, bermitra, dan melayani klien setiap hari.",
       "integrity": {
         "title": "Integritas",
         "description": "Dengan reputasi perilaku etis yang dibangun lebih dari satu dekade, budaya perusahaan kami adalah budaya yang memperlakukan semua orang secara setara dengan rasa hormat, kepercayaan, dan kehormatan tanpa kecuali."
@@ -107,10 +108,22 @@
         "description": "Kualitas peduli tentang detail mengakui pentingnya desain dan profesionalisme yang unggul dalam manajemen. Kami menetapkan properti dengan target tertinggi dengan layanan terbaik dikelasnya."
       }
     },
-    "team": {
-      "title": "Tim Kami",
-      "subtitle": "Temui Para Pemimpin",
-      "description": "Tim kepemimpinan kami yang berpengalaman membawa pengalaman gabungan puluhan tahun dalam pengembangan dan manajemen real estat"
+    "organization": {
+      "title": "Struktur Organisasi",
+      "subtitle": "Kepemimpinan & manajemen",
+      "description": "Para pemimpin PT. Property Group Imperium—pimpinan eksekutif dan manajemen.",
+      "executiveHeading": "Pimpinan eksekutif",
+      "managementHeading": "Manajemen",
+      "executive": [
+        { "name": "Albert", "position": "Direktur" },
+        { "name": "Muhri Fauzi Hafiz", "position": "Komisaris" }
+      ],
+      "management": [
+        { "name": "M. Diansyah Yusuf", "position": "Manajer Pemasaran" },
+        { "name": "Asri Murphi", "position": "Manajer Proyek" },
+        { "name": "Angelia Caroline", "position": "Manajer Akun" },
+        { "name": "Vincent", "position": "Manajer Operasional" }
+      ]
     }
   },
   "businessUnits": {

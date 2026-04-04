@@ -1,0 +1,120 @@
+{
+  "page": {
+    "metaTitle": "Our Projects",
+    "metaDescription": "Explore PT. Property Group Imperium's portfolio of completed and ongoing projects in property development, construction, and real estate.",
+    "heroEyebrow": "Our Portfolio",
+    "heroTitle": "Projects That Define Excellence",
+    "heroDescription": "From residential towers to commercial complexes, explore our diverse portfolio of projects that showcase our commitment to quality and innovation.",
+    "deliveredSubtitle": "Completed",
+    "deliveredTitle": "Delivered Projects",
+    "ongoingSubtitle": "In Progress",
+    "ongoingTitle": "Ongoing Projects"
+  },
+  "detail": {
+    "metaNotFound": "Project Not Found",
+    "backToProjects": "Back to Projects",
+    "galleryTitle": "Project Gallery",
+    "imageAltSuffix": "Image",
+    "relatedTitle": "Related Projects",
+    "ctaTitle": "Interested in Similar Projects?",
+    "ctaDescription": "Let's discuss how we can help bring your vision to life.",
+    "startProject": "Start Your Project",
+    "viewAllProjects": "View All Projects"
+  },
+  "status": {
+    "completed": "Completed",
+    "ongoing": "Ongoing"
+  },
+  "items": {
+    "skyview-tahap-2": {
+      "title": "Skyview Tahap 2",
+      "description": "The next phase of Skyview Residence—continuing our integrated living concept with refined layouts, contemporary amenities, and elevated views for residents in Medan.",
+      "location": "Medan, Indonesia"
+    },
+    "the-imperium": {
+      "title": "The Imperium",
+      "description": "A modern villa residence development with multi-story homes, a gated entrance, and landscaped frontage. The site borders Gg. Setuju, Jl. Perkutut, and Gg. Raya Indah—combining contemporary minimalist architecture with wood and stone accents. We build with pride and integrity.",
+      "location": "Medan, Indonesia (Gg. Setuju · Jl. Perkutut · Gg. Raya Indah)"
+    },
+    "the-nusa-indah": {
+      "title": "The Nusa Indah",
+      "description": "Villa residence development of 158 homes: modern single-story townhouses with pitched roofs, white and warm wood facades, and family-oriented streetscapes set among mature greenery.",
+      "location": "Medan, Indonesia"
+    },
+    "sentosa-palace": {
+      "title": "Sentosa Palace",
+      "description": "Villa residence community of 126 units—contemporary single-story homes with gabled roofs, bright facades, and landscaped frontages along wide internal roads.",
+      "location": "Medan, Indonesia"
+    },
+    "simalingkar-residence": {
+      "title": "Simalingkar Residence",
+      "description": "Villa residence with bold modern rooflines, wood and glass detailing, and a color-coded master plan featuring green open space and water features—premium tropical living.",
+      "location": "Medan, Indonesia"
+    },
+    "the-pancasila": {
+      "title": "The Pancasila",
+      "description": "Exclusive villa residence on 12 lots: two-story homes with distinctive mansard roofs, arched glazing, and private gardens—site plan includes dedicated entrance, garden, and parking areas.",
+      "location": "Medan, Indonesia"
+    },
+    "skyview-residence-phase-1": {
+      "title": "Skyview Residence Phase I",
+      "description": "A modern apartment complex with integrated living facilities, offering panoramic city views and contemporary lifestyle amenities for urban professionals and families.",
+      "location": "Medan, Indonesia"
+    },
+    "mega-warehouse": {
+      "title": "Mega Warehouse",
+      "description": "A state-of-the-art business warehouse facility designed for modern logistics and commercial operations, featuring efficient layouts and premium industrial specifications.",
+      "location": "Medan, Indonesia"
+    },
+    "mega-setiabudi-village": {
+      "title": "Mega Setiabudi Village",
+      "description": "An integrated residential and commercial development combining villa-style living with convenient shophouse units, creating a vibrant community environment.",
+      "location": "Medan, Indonesia"
+    },
+    "millenium-light": {
+      "title": "Millenium Light",
+      "description": "A contemporary villa residence and shophouse development featuring modern architectural design with efficient layouts for both residential and commercial use.",
+      "location": "Medan, Indonesia"
+    },
+    "mega-townhouse-2": {
+      "title": "Mega Townhouse II",
+      "description": "The second phase of our successful townhouse development, featuring enhanced designs and modern amenities for comfortable family living and business operations.",
+      "location": "Medan, Indonesia"
+    },
+    "graha-millenium": {
+      "title": "Graha Millenium",
+      "description": "A premium mixed-use development combining elegant villa residences with strategic shophouse units, designed for sophisticated urban living.",
+      "location": "Medan, Indonesia"
+    },
+    "millenium-business-center": {
+      "title": "Millenium Business Center",
+      "description": "A comprehensive business and residential complex featuring villa residences integrated with commercial shophouse units for optimal mixed-use functionality.",
+      "location": "Medan, Indonesia"
+    },
+    "graha-anggrek": {
+      "title": "Graha Anggrek",
+      "description": "An elegant residential and commercial development featuring villa-style homes with complementary shophouse units, creating a harmonious living and business environment.",
+      "location": "Medan, Indonesia"
+    },
+    "mega-townhouse-1": {
+      "title": "Mega Townhouse I",
+      "description": "Our flagship townhouse development combining residential villas with strategic shophouse units, setting the standard for integrated community living.",
+      "location": "Medan, Indonesia"
+    },
+    "millenium-anggrek": {
+      "title": "Millenium Anggrek",
+      "description": "A well-planned residential and commercial development featuring comfortable villa residences with integrated shophouse facilities for modern urban living.",
+      "location": "Medan, Indonesia"
+    },
+    "millenium-garden": {
+      "title": "Millenium Garden",
+      "description": "A beautiful villa residence development emphasizing green spaces and garden landscapes, offering tranquil living environments for families seeking quality homes.",
+      "location": "Medan, Indonesia"
+    },
+    "the-green-rajawali": {
+      "title": "The Green Rajawali",
+      "description": "Our pioneering villa residence project that established PGI's reputation for quality development, featuring environmentally conscious design and premium construction standards.",
+      "location": "Medan, Indonesia"
+    }
+  }
+}

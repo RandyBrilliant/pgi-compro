@@ -1,21 +1,45 @@
 'use client';
 
 import { useTransition } from 'react';
+import { useParams } from 'next/navigation';
 import { useLocale } from 'next-intl';
 import { useRouter, usePathname } from '@/i18n/routing';
 import { localeNames } from '@/i18n/config';
 import { Globe } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
+function useLocalizedHref(): ReturnType<typeof usePathname> | { pathname: '/projects/[slug]'; params: { slug: string } } | { pathname: '/services/[slug]'; params: { slug: string } } {
+  const pathname = usePathname();
+  const params = useParams();
+
+  const slugParam = params.slug;
+  const slug =
+    typeof slugParam === 'string'
+      ? slugParam
+      : Array.isArray(slugParam)
+        ? slugParam[0]
+        : undefined;
+
+  if (pathname === '/projects/[slug]' && slug) {
+    return { pathname: '/projects/[slug]', params: { slug } };
+  }
+  if (pathname === '/services/[slug]' && slug) {
+    return { pathname: '/services/[slug]', params: { slug } };
+  }
+
+  return pathname;
+}
+
 export function LocaleSwitcher() {
   const [isPending, startTransition] = useTransition();
   const locale = useLocale();
   const router = useRouter();
-  const pathname = usePathname();
+  const href = useLocalizedHref();
+  type RouterReplaceHref = Parameters<typeof router.replace>[0];
 
   const handleLocaleChange = (newLocale: string) => {
     startTransition(() => {
-      router.replace(pathname as any, { locale: newLocale });
+      router.replace(href as RouterReplaceHref, { locale: newLocale });
     });
   };
 

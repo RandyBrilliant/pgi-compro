@@ -4,10 +4,10 @@ import { getTranslations } from 'next-intl/server';
 import Image from "next/image";
 import { Target, Eye } from "lucide-react";
 import { Container, Section, SectionTitle, SectionBackground } from "@/components/ui";
-import { ValueCard, TeamMemberCard } from "@/components/features";
+import { ValueCard, OrganizationMember } from "@/components/features";
 import { FadeIn, SlideIn, StaggerContainer, StaggerItem } from "@/components/animations";
-import { companyValues, visionMission } from "@/lib/data/values";
-import { team, getTeamByLevel } from "@/lib/data/team";
+import { companyValues } from "@/lib/data/values";
+import { parseOrganizationRows } from "@/lib/about/organization";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -24,10 +24,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default function AboutPage() {
-  const leadership = getTeamByLevel(1);
-  const directors = getTeamByLevel(2);
-  const managers = getTeamByLevel(3);
-  const t = useTranslations('about');
+  const t = useTranslations("about");
+  const tOrg = useTranslations("about.organization");
+  const executive = parseOrganizationRows(tOrg.raw("executive"));
+  const management = parseOrganizationRows(tOrg.raw("management"));
 
   return (
     <>
@@ -133,9 +133,9 @@ export default function AboutPage() {
         <Container>
           <FadeIn>
             <SectionTitle
-              subtitle={t('values.subtitle')}
-              title={t('values.title')}
-              description={t('team.description')}
+              subtitle={t("values.subtitle")}
+              title={t("values.title")}
+              description={t("values.description")}
             />
           </FadeIn>
 
@@ -149,57 +149,49 @@ export default function AboutPage() {
         </Container>
       </Section>
 
-      {/* Team Section */}
+      {/* Organizational structure */}
       <Section className="bg-pgi-dark relative overflow-hidden">
-        {/* Subtle office background */}
         <SectionBackground
           src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=1920&q=80"
-          alt="Modern office space"
+          alt=""
           opacity={5}
           overlayDirection="both"
           grayscale
         />
-        
+
         <Container className="relative z-10">
           <FadeIn>
             <SectionTitle
-              subtitle={t('team.subtitle')}
-              title={t('team.title')}
-              description={t('team.description')}
+              subtitle={tOrg("subtitle")}
+              title={tOrg("title")}
+              description={tOrg("description")}
             />
           </FadeIn>
 
-          {/* Leadership */}
-          <FadeIn className="mb-16">
-            <div className="flex justify-center">
-              {leadership.map((member) => (
-                <TeamMemberCard key={member.id} member={member} />
+          <FadeIn className="mb-14">
+            <h3 className="font-display text-lg font-semibold text-pgi-gray-200 text-center mb-6">
+              {tOrg("executiveHeading")}
+            </h3>
+            <StaggerContainer className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-2xl mx-auto">
+              {executive.map((row) => (
+                <StaggerItem key={`${row.name}-${row.position}`}>
+                  <OrganizationMember name={row.name} position={row.position} />
+                </StaggerItem>
               ))}
-            </div>
+            </StaggerContainer>
           </FadeIn>
 
-          {/* Directors */}
-          <FadeIn delay={0.2} className="mb-16">
-            <h3 className="font-display text-xl font-semibold text-pgi-gray-100 text-center mb-8">
-              Board of Directors
+          <FadeIn delay={0.15}>
+            <h3 className="font-display text-lg font-semibold text-pgi-gray-200 text-center mb-6">
+              {tOrg("managementHeading")}
             </h3>
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-8 max-w-3xl mx-auto">
-              {directors.map((member) => (
-                <TeamMemberCard key={member.id} member={member} />
+            <StaggerContainer className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              {management.map((row) => (
+                <StaggerItem key={`${row.name}-${row.position}`}>
+                  <OrganizationMember name={row.name} position={row.position} />
+                </StaggerItem>
               ))}
-            </div>
-          </FadeIn>
-
-          {/* Managers */}
-          <FadeIn delay={0.4}>
-            <h3 className="font-display text-xl font-semibold text-pgi-gray-100 text-center mb-8">
-              Management Team
-            </h3>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-              {managers.map((member) => (
-                <TeamMemberCard key={member.id} member={member} />
-              ))}
-            </div>
+            </StaggerContainer>
           </FadeIn>
         </Container>
       </Section>

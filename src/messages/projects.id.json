@@ -1,0 +1,120 @@
+{
+  "page": {
+    "metaTitle": "Proyek Kami",
+    "metaDescription": "Jelajahi portofolio proyek selesai dan berlangsung PT. Property Group Imperium dalam pengembangan properti, konstruksi, dan real estat.",
+    "heroEyebrow": "Portofolio Kami",
+    "heroTitle": "Proyek yang Mencerminkan Keunggulan",
+    "heroDescription": "Dari menara residensial hingga kompleks komersial, jelajahi portofolio proyek kami yang menunjukkan komitmen terhadap kualitas dan inovasi.",
+    "deliveredSubtitle": "Selesai",
+    "deliveredTitle": "Proyek yang Telah Diserahkan",
+    "ongoingSubtitle": "Sedang Berjalan",
+    "ongoingTitle": "Proyek Berlangsung"
+  },
+  "detail": {
+    "metaNotFound": "Proyek Tidak Ditemukan",
+    "backToProjects": "Kembali ke Proyek",
+    "galleryTitle": "Galeri Proyek",
+    "imageAltSuffix": "Gambar",
+    "relatedTitle": "Proyek Terkait",
+    "ctaTitle": "Tertarik dengan Proyek Serupa?",
+    "ctaDescription": "Mari diskusikan bagaimana kami dapat membantu mewujudkan visi Anda.",
+    "startProject": "Mulai Proyek Anda",
+    "viewAllProjects": "Lihat Semua Proyek"
+  },
+  "status": {
+    "completed": "Selesai",
+    "ongoing": "Berlangsung"
+  },
+  "items": {
+    "skyview-tahap-2": {
+      "title": "Skyview Tahap 2",
+      "description": "Tahap berikutnya Skyview Residence—melanjutkan konsep hunian terpadu dengan tata ruang yang lebih matang, fasilitas kontemporer, dan pemandangan yang lebih baik bagi penghuni di Medan.",
+      "location": "Medan, Indonesia"
+    },
+    "the-imperium": {
+      "title": "The Imperium",
+      "description": "Pengembangan villa residence modern dengan rumah bertingkat, gerbang utama, dan taman depan yang rapi. Lokasi berbatasan dengan Gg. Setuju, Jl. Perkutut, dan Gg. Raya Indah—arsitektur minimalis kontemporer dengan aksen kayu dan batu. Kami membangun dengan bangga dan integritas.",
+      "location": "Medan, Indonesia (Gg. Setuju · Jl. Perkutut · Gg. Raya Indah)"
+    },
+    "the-nusa-indah": {
+      "title": "The Nusa Indah",
+      "description": "Pengembangan villa residence 158 unit: rumah town house modern satu lantai dengan atap miring, fasad putih dan kayu hangat, serta lingkungan jalan yang ramah keluarga di antara pepohonan hijau.",
+      "location": "Medan, Indonesia"
+    },
+    "sentosa-palace": {
+      "title": "Sentosa Palace",
+      "description": "Komunitas villa residence 126 unit—rumah satu lantai kontemporer dengan atap pelana, fasad cerah, dan lanskap depan rumah di sepanjang jalan internal yang lebar.",
+      "location": "Medan, Indonesia"
+    },
+    "simalingkar-residence": {
+      "title": "Simalingkar Residence",
+      "description": "Villa residence dengan bentuk atap modern yang tegas, detail kayu dan kaca, serta master plan berwarna dengan ruang hijau terbuka dan elemen air—hidup tropis premium.",
+      "location": "Medan, Indonesia"
+    },
+    "the-pancasila": {
+      "title": "The Pancasila",
+      "description": "Villa residence eksklusif di 12 kavling: rumah dua lantai dengan atap mansard khas, bukaan kaca lengkung, dan taman pribadi—site plan meliputi akses masuk, taman, dan area parkir.",
+      "location": "Medan, Indonesia"
+    },
+    "skyview-residence-phase-1": {
+      "title": "Skyview Residence Tahap I",
+      "description": "Kompleks apartemen modern dengan fasilitas hunian terpadu, pemandangan kota yang luas, dan fasilitas gaya hidup kontemporer untuk profesional perkotaan dan keluarga.",
+      "location": "Medan, Indonesia"
+    },
+    "mega-warehouse": {
+      "title": "Mega Warehouse",
+      "description": "Fasilitas gudang bisnis mutakhir untuk logistik modern dan operasi komersial, dengan tata letak efisien dan spesifikasi industri premium.",
+      "location": "Medan, Indonesia"
+    },
+    "mega-setiabudi-village": {
+      "title": "Mega Setiabudi Village",
+      "description": "Pengembangan residensial dan komersial terpadu yang menggabungkan gaya hidup villa dengan ruko strategis, menciptakan lingkungan komunitas yang dinamis.",
+      "location": "Medan, Indonesia"
+    },
+    "millenium-light": {
+      "title": "Millenium Light",
+      "description": "Pengembangan villa residence dan ruko kontemporer dengan desain arsitektur modern dan tata ruang efisien untuk hunian maupun komersial.",
+      "location": "Medan, Indonesia"
+    },
+    "mega-townhouse-2": {
+      "title": "Mega Townhouse II",
+      "description": "Tahap kedua pengembangan townhouse sukses kami, dengan desain yang ditingkatkan dan fasilitas modern untuk hunian keluarga nyaman serta aktivitas bisnis.",
+      "location": "Medan, Indonesia"
+    },
+    "graha-millenium": {
+      "title": "Graha Millenium",
+      "description": "Pengembangan mixed-use premium yang memadukan villa elegan dengan ruko strategis, dirancang untuk gaya hidup urban yang berkelas.",
+      "location": "Medan, Indonesia"
+    },
+    "millenium-business-center": {
+      "title": "Millenium Business Center",
+      "description": "Kompleks bisnis dan hunian komprehensif dengan villa terintegrasi ruko komersial untuk fungsi mixed-use yang optimal.",
+      "location": "Medan, Indonesia"
+    },
+    "graha-anggrek": {
+      "title": "Graha Anggrek",
+      "description": "Pengembangan residensial dan komersial elegan dengan rumah bergaya villa dan ruko pelengkap, menciptakan lingkungan huni dan bisnis yang selaras.",
+      "location": "Medan, Indonesia"
+    },
+    "mega-townhouse-1": {
+      "title": "Mega Townhouse I",
+      "description": "Pengembangan townhouse unggulan kami yang memadukan villa residensial dengan ruko strategis, menetapkan standar komunitas terpadu.",
+      "location": "Medan, Indonesia"
+    },
+    "millenium-anggrek": {
+      "title": "Millenium Anggrek",
+      "description": "Pengembangan residensial dan komersial terencana dengan villa nyaman dan fasilitas ruko terintegrasi untuk gaya hidup urban modern.",
+      "location": "Medan, Indonesia"
+    },
+    "millenium-garden": {
+      "title": "Millenium Garden",
+      "description": "Pengembangan villa residence yang menonjolkan ruang hijau dan taman, menawarkan lingkungan tenang bagi keluarga yang menginginkan hunian berkualitas.",
+      "location": "Medan, Indonesia"
+    },
+    "the-green-rajawali": {
+      "title": "The Green Rajawali",
+      "description": "Proyek villa perintis yang memperkuat reputasi PGI dalam pengembangan berkualitas, dengan desain yang memperhatikan lingkungan dan standar konstruksi premium.",
+      "location": "Medan, Indonesia"
+    }
+  }
+}

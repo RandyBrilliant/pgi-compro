@@ -1,6 +1,84 @@
 import type { Project } from "@/types";
 
 export const projects: Project[] = [
+  {
+    id: "18",
+    slug: "skyview-tahap-2",
+    title: "Skyview Tahap 2",
+    businessUnit: "pgi-developer",
+    description:
+      "The next phase of Skyview Residence—continuing our integrated living concept with refined layouts, contemporary amenities, and elevated views for residents in Medan.",
+    location: "Medan, Indonesia",
+    images: ["/images/projects/skyview-tahap-2-1.png"],
+    year: 2026,
+    status: "ongoing",
+    featured: false,
+  },
+  {
+    id: "13",
+    slug: "the-imperium",
+    title: "The Imperium",
+    businessUnit: "pgi-developer",
+    description:
+      "A modern villa residence development with multi-story homes, a gated entrance, and landscaped frontage. The site borders Gg. Setuju, Jl. Perkutut, and Gg. Raya Indah—combining contemporary minimalist architecture with wood and stone accents. We build with pride and integrity.",
+    location: "Medan, Indonesia (Gg. Setuju · Jl. Perkutut · Gg. Raya Indah)",
+    images: ["/images/projects/the-imperium-1.png"],
+    year: 2026,
+    status: "ongoing",
+    featured: false,
+  },
+  {
+    id: "14",
+    slug: "the-nusa-indah",
+    title: "The Nusa Indah",
+    businessUnit: "pgi-developer",
+    description:
+      "Villa residence development of 158 homes: modern single-story townhouses with pitched roofs, white and warm wood facades, and family-oriented streetscapes set among mature greenery.",
+    location: "Medan, Indonesia",
+    images: ["/images/projects/the-nusa-indah-1.png"],
+    year: 2020,
+    status: "ongoing",
+    featured: false,
+  },
+  {
+    id: "15",
+    slug: "sentosa-palace",
+    title: "Sentosa Palace",
+    businessUnit: "pgi-developer",
+    description:
+      "Villa residence community of 126 units—contemporary single-story homes with gabled roofs, bright facades, and landscaped frontages along wide internal roads.",
+    location: "Medan, Indonesia",
+    images: ["/images/projects/sentosa-palace-1.png"],
+    year: 2019,
+    status: "ongoing",
+    featured: false,
+  },
+  {
+    id: "16",
+    slug: "simalingkar-residence",
+    title: "Simalingkar Residence",
+    businessUnit: "pgi-developer",
+    description:
+      "Villa residence with bold modern rooflines, wood and glass detailing, and a color-coded master plan featuring green open space and water features—premium tropical living.",
+    location: "Medan, Indonesia",
+    images: ["/images/projects/simalingkar-residence-1.png"],
+    year: 2025,
+    status: "ongoing",
+    featured: false,
+  },
+  {
+    id: "17",
+    slug: "the-pancasila",
+    title: "The Pancasila",
+    businessUnit: "pgi-developer",
+    description:
+      "Exclusive villa residence on 12 lots: two-story homes with distinctive mansard roofs, arched glazing, and private gardens—site plan includes dedicated entrance, garden, and parking areas.",
+    location: "Medan, Indonesia",
+    images: ["/images/projects/the-pancasila-1.png"],
+    year: 2025,
+    status: "ongoing",
+    featured: false,
+  },
   // Featured Projects (Most Recent)
   {
     id: "1",
@@ -182,4 +260,24 @@ export function getFeaturedProjects(): Project[] {
 
 export function getProjectsByBusinessUnit(businessUnitId: string): Project[] {
   return projects.filter((project) => project.businessUnit === businessUnitId);
+}
+
+export type ProjectStatus = Project["status"];
+
+export function projectStatusLabel(status: ProjectStatus): string {
+  const labels: Record<ProjectStatus, string> = {
+    completed: "Completed",
+    ongoing: "Ongoing",
+  };
+  return labels[status];
+}
+
+export function projectStatusBadgeVariant(
+  status: ProjectStatus,
+): "success" | "warning" {
+  const variants: Record<ProjectStatus, "success" | "warning"> = {
+    completed: "success",
+    ongoing: "warning",
+  };
+  return variants[status];
 }

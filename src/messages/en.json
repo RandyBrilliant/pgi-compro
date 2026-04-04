@@ -90,6 +90,7 @@
     "values": {
       "title": "Business Values",
       "subtitle": "What Drives Us",
+      "description": "The principles that shape how we build, partner, and serve our clients every day.",
       "integrity": {
         "title": "Integrity",
         "description": "With a reputation for ethical behavior built over more than a decade, our company culture is one that treats everyone equally with respect, trust, and honor without exception."
@@ -107,10 +108,22 @@
         "description": "Quality cares about details, recognizing the importance of superior design and professionalism in management. We set properties with the highest targets and best-in-class service."
       }
     },
-    "team": {
-      "title": "Our Team",
-      "subtitle": "Meet the Leaders",
-      "description": "Our experienced leadership team brings decades of combined expertise in real estate development and management"
+    "organization": {
+      "title": "Organizational Structure",
+      "subtitle": "Leadership & management",
+      "description": "The people guiding PT. Property Group Imperium—executive leadership and management roles.",
+      "executiveHeading": "Executive leadership",
+      "managementHeading": "Management",
+      "executive": [
+        { "name": "Albert", "position": "Director" },
+        { "name": "Muhri Fauzi Hafiz", "position": "Commissioner" }
+      ],
+      "management": [
+        { "name": "M. Diansyah Yusuf", "position": "Marketing Manager" },
+        { "name": "Asri Murphi", "position": "Project Manager" },
+        { "name": "Angelia Caroline", "position": "Account Manager" },
+        { "name": "Vincent", "position": "Operational Manager" }
+      ]
     }
   },
   "businessUnits": {

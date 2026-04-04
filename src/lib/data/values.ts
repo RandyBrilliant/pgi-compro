@@ -92,6 +92,21 @@ export const clients: Client[] = [
     name: "Wira",
     logo: "/images/clients/wira.png",
   },
+  {
+    id: "build-in-management",
+    name: "Build In Management",
+    logo: "/images/clients/build-in-management.png",
+  },
+  {
+    id: "mgm",
+    name: "MGM",
+    logo: "/images/clients/mgm.png",
+  },
+  {
+    id: "nkri",
+    name: "NKRI",
+    logo: "/images/clients/nkri.png",
+  },
 ];
 
 export const visionMission = {
