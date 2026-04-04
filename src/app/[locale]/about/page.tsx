@@ -175,7 +175,7 @@ export default function AboutPage() {
             <StaggerContainer className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-2xl mx-auto">
               {executive.map((row) => (
                 <StaggerItem key={`${row.name}-${row.position}`}>
-                  <OrganizationMember name={row.name} position={row.position} />
+                  <OrganizationMember {...row} />
                 </StaggerItem>
               ))}
             </StaggerContainer>
@@ -188,7 +188,7 @@ export default function AboutPage() {
             <StaggerContainer className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
               {management.map((row) => (
                 <StaggerItem key={`${row.name}-${row.position}`}>
-                  <OrganizationMember name={row.name} position={row.position} />
+                  <OrganizationMember {...row} />
                 </StaggerItem>
               ))}
             </StaggerContainer>

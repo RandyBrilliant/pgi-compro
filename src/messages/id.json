@@ -41,7 +41,7 @@
     "businessUnits": {
       "subtitle": "Apa Yang Kami Lakukan",
       "title": "Unit Bisnis Kami",
-      "description": "Empat divisi khusus bekerja sama untuk memberikan solusi properti yang komprehensif"
+      "description": "Tiga divisi khusus bekerja sama untuk memberikan solusi properti yang komprehensif"
     },
     "stats": {
       "yearsExperience": "Tahun Pengalaman",
@@ -67,7 +67,7 @@
   "about": {
     "meta": {
       "title": "Tentang Kami - PT. Property Group Imperium",
-      "description": "Pelajari tentang PT. Property Group Imperium, perusahaan pengembangan dan manajemen properti terkemuka di Indonesia dengan empat divisi bisnis khusus."
+      "description": "Pelajari tentang PT. Property Group Imperium, perusahaan pengembangan dan manajemen properti terkemuka di Indonesia dengan tiga divisi bisnis khusus."
     },
     "hero": {
       "title": "Tentang PT. Property Group Imperium",
@@ -115,8 +115,8 @@
       "executiveHeading": "Pimpinan eksekutif",
       "managementHeading": "Manajemen",
       "executive": [
-        { "name": "Albert", "position": "Direktur" },
-        { "name": "Muhri Fauzi Hafiz", "position": "Komisaris" }
+        { "name": "Albert", "position": "Direktur", "photo": "/images/team/albert.jpg" },
+        { "name": "Muhri Fauzi Hafiz", "position": "Komisaris", "photo": "/images/team/muhri.jpg" }
       ],
       "management": [
         { "name": "M. Diansyah Yusuf", "position": "Manajer Pemasaran" },
@@ -151,18 +151,6 @@
         "designBuild": "Layanan Design-Build"
       }
     },
-    "machinery": {
-      "name": "PGI Machinery",
-      "tagline": "Menggerakkan Proyek Anda",
-      "description": "PGI Machinery menyediakan armada lengkap peralatan berat untuk disewa. Mesin kami yang terawat baik dan operator berpengalaman memastikan proyek konstruksi Anda berjalan lancar dan efisien.",
-      "services": {
-        "equipmentRental": "Sewa Alat Berat",
-        "craneServices": "Layanan Crane",
-        "excavatorRental": "Sewa Excavator",
-        "equipmentMaintenance": "Pemeliharaan Peralatan",
-        "operatorServices": "Layanan Operator"
-      }
-    },
     "developer": {
       "name": "PGI Developer",
       "tagline": "Membentuk Lanskap Masa Depan",
@@ -179,7 +167,7 @@
   "contact": {
     "meta": {
       "title": "Hubungi Kami - PT. Property Group Imperium",
-      "description": "Hubungi PT. Property Group Imperium. Kontak kami untuk pertanyaan tentang manajemen properti, konstruksi, sewa alat berat, atau layanan pengembangan properti."
+      "description": "Hubungi PT. Property Group Imperium. Kontak kami untuk pertanyaan tentang manajemen properti, konstruksi, atau layanan pengembangan properti."
     },
     "title": "Hubungi Kami",
     "subtitle": "Hubungi Kami",
@@ -211,6 +199,6 @@
   "seo": {
     "companyName": "PT. Property Group Imperium",
     "tagline": "Membangun Keunggulan, Membentuk Masa Depan",
-    "defaultDescription": "PT. Property Group Imperium adalah perusahaan pengembangan dan manajemen properti terkemuka yang memberikan keunggulan dalam real estat, konstruksi, alat berat, dan pengembangan properti."
+    "defaultDescription": "PT. Property Group Imperium adalah perusahaan pengembangan dan manajemen properti terkemuka yang memberikan keunggulan dalam real estat, konstruksi, dan pengembangan properti."
   }
 }

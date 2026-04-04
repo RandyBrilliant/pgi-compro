@@ -34,7 +34,7 @@ export default function HomePage() {
             />
           </FadeIn>
 
-          <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {businessUnits.map((unit, index) => (
               <StaggerItem key={unit.id}>
                 <BusinessUnitCard unit={unit} index={index} />

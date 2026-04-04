@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, Building2, HardHat, Cog, Building } from "lucide-react";
+import { ArrowRight, Building2, HardHat, Building } from "lucide-react";
 import type { BusinessUnit } from "@/types";
 import { cn } from "@/lib/utils";
 
@@ -12,7 +12,6 @@ interface BusinessUnitCardProps {
 const iconMap = {
   Building2: Building2,
   HardHat: HardHat,
-  Cog: Cog,
   Building: Building,
 };
 

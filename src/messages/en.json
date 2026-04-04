@@ -41,7 +41,7 @@
     "businessUnits": {
       "subtitle": "What We Do",
       "title": "Our Business Units",
-      "description": "Four specialized divisions working together to deliver comprehensive property solutions"
+      "description": "Three specialized divisions working together to deliver comprehensive property solutions"
     },
     "stats": {
       "yearsExperience": "Years of Experience",
@@ -67,7 +67,7 @@
   "about": {
     "meta": {
       "title": "About Us - PT. Property Group Imperium",
-      "description": "Learn about PT. Property Group Imperium, Indonesia's leading property development and management company with four specialized business divisions."
+      "description": "Learn about PT. Property Group Imperium, Indonesia's leading property development and management company with three specialized business divisions."
     },
     "hero": {
       "title": "About PT. Property Group Imperium",
@@ -115,8 +115,8 @@
       "executiveHeading": "Executive leadership",
       "managementHeading": "Management",
       "executive": [
-        { "name": "Albert", "position": "Director" },
-        { "name": "Muhri Fauzi Hafiz", "position": "Commissioner" }
+        { "name": "Albert", "position": "Director", "photo": "/images/team/albert.jpg" },
+        { "name": "Muhri Fauzi Hafiz", "position": "Commissioner", "photo": "/images/team/muhri.jpg" }
       ],
       "management": [
         { "name": "M. Diansyah Yusuf", "position": "Marketing Manager" },
@@ -151,18 +151,6 @@
         "designBuild": "Design-Build Services"
       }
     },
-    "machinery": {
-      "name": "PGI Machinery",
-      "tagline": "Powering Your Projects",
-      "description": "PGI Machinery provides a comprehensive fleet of heavy equipment for rent. Our well-maintained machinery and experienced operators ensure your construction projects run smoothly and efficiently.",
-      "services": {
-        "equipmentRental": "Heavy Equipment Rental",
-        "craneServices": "Crane Services",
-        "excavatorRental": "Excavator Rental",
-        "equipmentMaintenance": "Equipment Maintenance",
-        "operatorServices": "Operator Services"
-      }
-    },
     "developer": {
       "name": "PGI Developer",
       "tagline": "Shaping Tomorrow's Landscape",
@@ -179,7 +167,7 @@
   "contact": {
     "meta": {
       "title": "Contact Us - PT. Property Group Imperium",
-      "description": "Get in touch with PT. Property Group Imperium. Contact us for inquiries about property management, construction, machinery rental, or property development services."
+      "description": "Get in touch with PT. Property Group Imperium. Contact us for inquiries about property management, construction, or property development services."
     },
     "title": "Contact Us",
     "subtitle": "Get in Touch",

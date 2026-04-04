@@ -34,22 +34,6 @@ export const businessUnits: BusinessUnit[] = [
     icon: "HardHat",
   },
   {
-    id: "pgi-machinery",
-    name: "PGI Machinery",
-    tagline: "Powering Your Projects",
-    description:
-      "PGI Machinery provides a comprehensive fleet of heavy equipment for rent. Our well-maintained machinery and experienced operators ensure your construction projects run smoothly and efficiently.",
-    services: [
-      "Heavy Equipment Rental",
-      "Crane Services",
-      "Excavator Rental",
-      "Equipment Maintenance",
-      "Operator Services",
-    ],
-    image: "https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=800&h=600&fit=crop", // REPLACE: Heavy machinery/excavator
-    icon: "Cog",
-  },
-  {
     id: "pgi-developer",
     name: "PGI Developer",
     tagline: "Shaping Tomorrow's Landscape",

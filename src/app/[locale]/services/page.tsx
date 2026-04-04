@@ -9,7 +9,7 @@ import { siteConfig } from "@/lib/config";
 
 export const metadata: Metadata = {
   title: "Our Services",
-  description: `Explore ${siteConfig.shortName}'s comprehensive services - property management, construction, heavy machinery rental, and property development.`,
+  description: `Explore ${siteConfig.shortName}'s comprehensive services—property management, construction, and property development.`,
 };
 
 export default function ServicesPage() {

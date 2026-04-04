@@ -36,21 +36,6 @@ export function useBusinessUnits(): BusinessUnit[] {
       icon: "HardHat",
     },
     {
-      id: "pgi-machinery",
-      name: t('machinery.name'),
-      tagline: t('machinery.tagline'),
-      description: t('machinery.description'),
-      services: [
-        t('machinery.services.equipmentRental'),
-        t('machinery.services.craneServices'),
-        t('machinery.services.excavatorRental'),
-        t('machinery.services.equipmentMaintenance'),
-        t('machinery.services.operatorServices'),
-      ],
-      image: "https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=800&h=600&fit=crop", // REPLACE: Heavy machinery/excavator
-      icon: "Cog",
-    },
-    {
       id: "pgi-developer",
       name: t('developer.name'),
       tagline: t('developer.tagline'),
