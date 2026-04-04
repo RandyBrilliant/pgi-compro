@@ -29,13 +29,13 @@ export const projects: Project[] = [
   },
   {
     id: "19",
-    slug: "kualanamu-permai",
-    title: "Kualanamu Permai",
+    slug: "lestari-permai",
+    title: "Lestari Permai",
     businessUnit: "pgi-developer",
     description:
       "A residential development in the Kualanamu area offering quality homes with thoughtful planning and modern community living, aligned with PGI’s standards for comfort and value.",
     location: "Medan, Indonesia",
-    images: ["/images/projects/kualanamu-permai-1.jpg"],
+    images: ["/images/projects/lestari-permai-1.jpg"],
     year: 2019,
     status: "ongoing",
     featured: false,
