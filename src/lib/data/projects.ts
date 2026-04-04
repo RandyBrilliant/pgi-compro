@@ -4,12 +4,12 @@ export const projects: Project[] = [
   {
     id: "18",
     slug: "skyview-tahap-2",
-    title: "Skyview Tahap 2",
+    title: "Skyview Tahap 2-5 Grand Plan",
     businessUnit: "pgi-developer",
     description:
-      "The next phase of Skyview Residence—continuing our integrated living concept with refined layouts, contemporary amenities, and elevated views for residents in Medan.",
+      "The master plan for Skyview Residence phases 2 through 5—continuing our integrated living concept with refined layouts, contemporary amenities, and elevated views for residents in Medan.",
     location: "Medan, Indonesia",
-    images: ["/images/projects/skyview-tahap-2-1.png"],
+    images: ["/images/projects/skyview-tahap-2-1.jpg"],
     year: 2026,
     status: "ongoing",
     featured: false,
