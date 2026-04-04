@@ -26,6 +26,8 @@ export const projects: Project[] = [
     year: 2026,
     status: "ongoing",
     featured: false,
+
+    
   },
   {
     id: "14",
