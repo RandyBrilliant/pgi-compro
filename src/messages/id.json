@@ -8,22 +8,22 @@
       "contact": "Kontak"
     },
     "buttons": {
-      "learnMore": "Pelajari Lebih Lanjut",
+      "learnMore": "Selengkapnya",
       "getInTouch": "Hubungi Kami",
       "viewAll": "Lihat Semua",
       "sendMessage": "Kirim Pesan",
-      "readMore": "Baca Selengkapnya",
-      "exploreServices": "Jelajahi Layanan Kami",
-      "viewProjects": "Lihat Proyek Kami",
+      "readMore": "Baca Lebih Lanjut",
+      "exploreServices": "Eksplorasi Layanan",
+      "viewProjects": "Lihat Proyek",
       "contactUs": "Hubungi Kami"
     },
     "footer": {
-      "quickLinks": "Tautan Cepat",
+      "quickLinks": "Akses Cepat",
       "ourServices": "Layanan Kami",
       "contactUs": "Hubungi Kami",
       "rights": "Hak cipta dilindungi",
       "about": "Tentang PT. Property Group Imperium",
-      "description": "Didirikan pada tahun 2006, PT. Property Group Imperium adalah pengembang properti terkemuka di Medan yang berkomitmen membangun properti berkualitas dengan konsep inovatif.",
+      "description": "Berdiri sejak tahun 2006, PT. Property Group Imperium adalah developer properti terkemuka di Medan yang berkomitmen membangun properti berkualitas dengan konsep inovatif.",
       "followUs": "Ikuti Kami"
     },
     "language": {
@@ -36,12 +36,12 @@
     "hero": {
       "title": "We Build with Pride & Integrity",
       "subtitle": "Imperium Property Group - Established 2006",
-      "description": "Imperium Property Group merupakan salah satu pengembang properti terbesar di Indonesia yang berlokasi di Medan, Sumatera Utara."
+      "description": "Imperium Property Group merupakan salah satu developer properti terbesar di Indonesia yang berlokasi di Medan, Sumatera Utara."
     },
     "businessUnits": {
-      "subtitle": "Apa Yang Kami Lakukan",
+      "subtitle": "Apa yang Kami Lakukan",
       "title": "Unit Bisnis Kami",
-      "description": "Tiga divisi khusus bekerja sama untuk memberikan solusi properti yang komprehensif"
+      "description": "Tiga divisi spesialis yang bekerja sama memberikan solusi properti komprehensif"
     },
     "stats": {
       "yearsExperience": "Tahun Pengalaman",
@@ -52,67 +52,67 @@
     "projects": {
       "subtitle": "Karya Kami",
       "title": "Proyek Unggulan",
-      "description": "Menunjukkan komitmen kami terhadap keunggulan melalui pengembangan landmark"
+      "description": "Menunjukkan komitmen kami untuk menghadirkan pengembangan yang berkualitas"
     },
     "clients": {
       "subtitle": "Mitra Terpercaya",
       "title": "Partner Kami",
-      "description": "Bangga bekerja sama dengan organisasi terkemuka di seluruh Indonesia"
+      "description": "Bangga bekerja sama dengan berbagai organisasi terkemuka di seluruh Indonesia"
     },
     "cta": {
-      "title": "Siap Memulai Proyek Anda Selanjutnya?",
+      "title": "Siap Memulai Proyek Anda?",
       "description": "Mari diskusikan bagaimana PGI dapat membantu mewujudkan visi Anda dengan solusi properti komprehensif kami."
     }
   },
   "about": {
     "meta": {
       "title": "Tentang Kami - PT. Property Group Imperium",
-      "description": "Pelajari tentang PT. Property Group Imperium, perusahaan pengembangan dan manajemen properti terkemuka di Indonesia dengan tiga divisi bisnis khusus."
+      "description": "Kenali lebih jauh PT. Property Group Imperium, perusahaan pengembangan dan manajemen properti terkemuka di Indonesia dengan tiga divisi bisnis khusus."
     },
     "hero": {
       "title": "Tentang PT. Property Group Imperium",
-      "description": "Warisan keunggulan dalam real estat Indonesia"
+      "description": "Dedikasi untuk keunggulan di industri real estat Indonesia"
     },
     "story": {
       "title": "Tentang Kami",
       "subtitle": "Imperium (Latin: Imperium)",
-      "definition": "Didefinisikan sebagai suatu kerajaan besar menduduki sebuah wilayah geografis yang sangat luas. Dibawah pimpinan seorang raja yang berkuasa, dan memimpin tim yang solid di negaranya.",
-      "content": "Didirikan pada tahun 2006, PT. Property Group Imperium (PGI) adalah perusahaan properti yang berlokasi di Medan - Sumatera Utara. Sebagai pengembang properti terkemuka dan bergengsi, fokus utama perusahaan adalah membangun & mengembangkan properti perumahan dan komersil yang berkualitas.\n\nSebagai Pengembang disektor properti, kami berkomitmen untuk menciptakan proyek yang ramah lingkungan dan berorientasi pada kepuasan pelanggan. Kami secara konsisten berusaha untuk meningkatkan strategi dalam memenuhi kebutuhan properti yang relevan dan berkembang.\n\nSejak proyek awal kami, PT. Property Group Imperium telah menunjukkan secara konsisten komitmen untuk menjadi yang terbaik dalam industri properti."
+      "definition": "Didefinisikan sebagai sebuah kerajaan besar yang menempati wilayah geografis yang sangat luas, di bawah kepemimpinan seorang pemimpin yang kuat dengan tim yang solid.",
+      "content": "Berdiri sejak tahun 2006, PT. Property Group Imperium (PGI) adalah perusahaan properti yang berlokasi di Medan, Sumatera Utara. Sebagai developer properti terkemuka, fokus utama kami adalah membangun dan mengembangkan properti perumahan serta komersial yang berkualitas tinggi.\n\nKami berkomitmen menciptakan proyek yang ramah lingkungan dan selalu mengutamakan kepuasan pelanggan. Strategi kami terus berkembang untuk memenuhi kebutuhan properti yang dinamis dan relevan dengan zaman.\n\nSejak proyek pertama kami, PT. Property Group Imperium konsisten menunjukkan dedikasi untuk menjadi yang terbaik di industri properti."
     },
     "vision": {
       "title": "Visi",
-      "description": "Menjadi salah satu pengembang terbaik dan terpercaya yang menginisiasi suatu hunian terdepan di industri properti, dengan nilai investasi tinggi."
+      "description": "Menjadi salah satu developer terbaik dan terpercaya yang menghadirkan hunian berkelas di industri properti dengan nilai investasi tinggi."
     },
     "mission": {
       "title": "Misi",
-      "description": "Memprakarsai dan membangun proyek dengan \"Konseptual & Inovatif\" sesuai era dan generasi mengikuti zaman."
+      "description": "Memprakarsai dan membangun proyek yang konseptual dan inovatif sesuai era dan generasi masa kini."
     },
     "values": {
-      "title": "Nilai Bisnis",
-      "subtitle": "Yang Mendorong Kami",
-      "description": "Prinsip yang membentuk cara kami membangun, bermitra, dan melayani klien setiap hari.",
+      "title": "Nilai Perusahaan",
+      "subtitle": "Prinsip Kami",
+      "description": "Nilai-nilai yang membentuk cara kami bekerja, bermitra, dan melayani klien.",
       "integrity": {
         "title": "Integritas",
-        "description": "Dengan reputasi perilaku etis yang dibangun lebih dari satu dekade, budaya perusahaan kami adalah budaya yang memperlakukan semua orang secara setara dengan rasa hormat, kepercayaan, dan kehormatan tanpa kecuali."
+        "description": "Dengan reputasi etis yang terbangun lebih dari satu dekade, budaya perusahaan kami memperlakukan semua orang dengan penuh hormat, kepercayaan, dan profesionalisme."
       },
       "authenticity": {
         "title": "Keaslian",
-        "description": "Perusahaan kami menyambut baik ide-ide baru, proyek inovatif, dan perspektif unik yang menginspirasi kreatifitas dan solusi properti cerdas."
+        "description": "Kami menyambut baik ide-ide baru, proyek inovatif, dan perspektif unik yang menginspirasi kreativitas serta solusi properti yang cerdas."
       },
       "longterm": {
         "title": "Fokus Jangka Panjang",
-        "description": "Cakrawala investasi jangka panjang kami berasal dari kombinasi kesabaran dan pola pikir konsistensi. Kami menghargai perencanaan terperinci dan masa depan yang melibatkan dampak lingkungan yang positif."
+        "description": "Visi investasi jangka panjang kami dibangun dari kesabaran dan konsistensi. Kami menghargai perencanaan yang matang dengan dampak positif bagi lingkungan dan masa depan."
       },
       "quality": {
         "title": "Kualitas",
-        "description": "Kualitas peduli tentang detail mengakui pentingnya desain dan profesionalisme yang unggul dalam manajemen. Kami menetapkan properti dengan target tertinggi dengan layanan terbaik dikelasnya."
+        "description": "Kualitas berarti perhatian pada setiap detail dengan desain dan manajemen yang profesional. Kami menetapkan standar tertinggi dengan layanan terbaik di kelasnya."
       }
     },
     "organization": {
-      "title": "Struktur Organisasi",
-      "subtitle": "Kepemimpinan & manajemen",
-      "description": "Para pemimpin PT. Property Group Imperium—pimpinan eksekutif dan manajemen.",
-      "executiveHeading": "Pimpinan eksekutif",
+      "title": "Tim Kami",
+      "subtitle": "Kepemimpinan & Manajemen",
+      "description": "Tim eksekutif dan manajemen PT. Property Group Imperium.",
+      "executiveHeading": "Pimpinan Eksekutif",
       "managementHeading": "Manajemen",
       "executive": [
         { "name": "Albert", "position": "Direktur", "photo": "/images/team/albert.jpg" },
@@ -130,7 +130,7 @@
     "property": {
       "name": "PGI Property",
       "tagline": "Keunggulan dalam Manajemen Properti",
-      "description": "PGI Property mengkhususkan diri dalam layanan manajemen properti komprehensif, memastikan aset Anda dikelola dengan standar tertinggi. Kami menangani segalanya mulai dari hubungan penyewa hingga pemeliharaan, memaksimalkan nilai dan pengembalian properti Anda.",
+      "description": "PGI Property mengkhususkan diri dalam layanan manajemen properti yang lengkap dan memastikan aset Anda dikelola dengan standar tertinggi. Kami menangani semua aspek mulai dari hubungan penyewa hingga pemeliharaan untuk memaksimalkan nilai dan return properti Anda.",
       "services": {
         "management": "Manajemen Properti",
         "tenantRelations": "Hubungan Penyewa",
@@ -141,8 +141,8 @@
     },
     "contractor": {
       "name": "PGI Contractor",
-      "tagline": "Membangun Visi Anda",
-      "description": "PGI Contractor memberikan layanan konstruksi luar biasa dengan fokus pada kualitas, keselamatan, dan pengiriman tepat waktu. Dari bangunan komersial hingga kompleks residensial, kami mewujudkan visi arsitektur Anda.",
+      "tagline": "Wujudkan Visi Anda",
+      "description": "PGI Contractor memberikan layanan konstruksi berkualitas tinggi dengan fokus pada kualitas, keselamatan, dan ketepatan waktu. Dari bangunan komersial hingga kompleks residensial, kami siap mewujudkan visi arsitektur Anda.",
       "services": {
         "commercial": "Konstruksi Komersial",
         "residential": "Konstruksi Residensial",
@@ -153,8 +153,8 @@
     },
     "developer": {
       "name": "PGI Developer",
-      "tagline": "Membentuk Lanskap Masa Depan",
-      "description": "PGI Developer menciptakan proyek real estat inovatif yang memadukan desain modern dengan keunggulan fungsional. Kami mengembangkan properti residensial dan komersial premium yang menetapkan standar baru dalam kehidupan mewah.",
+      "tagline": "Ciptakan Masa Depan",
+      "description": "PGI Developer menciptakan proyek real estat yang inovatif dengan memadukan desain modern dan keunggulan fungsional. Kami mengembangkan properti residensial dan komersial premium yang menetapkan standar baru untuk hunian berkualitas.",
       "services": {
         "residential": "Pengembangan Residensial",
         "commercial": "Pengembangan Komersial",
@@ -167,26 +167,26 @@
   "contact": {
     "meta": {
       "title": "Hubungi Kami - PT. Property Group Imperium",
-      "description": "Hubungi PT. Property Group Imperium. Kontak kami untuk pertanyaan tentang manajemen properti, konstruksi, atau layanan pengembangan properti."
+      "description": "Hubungi PT. Property Group Imperium untuk pertanyaan tentang manajemen properti, konstruksi, atau layanan pengembangan properti."
     },
     "title": "Hubungi Kami",
     "subtitle": "Hubungi Kami",
-    "description": "Punya pertanyaan atau siap memulai proyek Anda selanjutnya? Kami ingin mendengar dari Anda.",
+    "description": "Ada pertanyaan atau siap memulai proyek Anda? Kami siap mendengar dari Anda.",
     "form": {
       "name": "Nama",
-      "namePlaceholder": "Nama Anda",
+      "namePlaceholder": "Nama lengkap Anda",
       "email": "Email",
       "emailPlaceholder": "email.anda@contoh.com",
       "phone": "Telepon",
       "phonePlaceholder": "+62 xxx xxxx xxxx",
       "subject": "Subjek",
-      "subjectPlaceholder": "Bagaimana kami dapat membantu Anda?",
+      "subjectPlaceholder": "Apa yang bisa kami bantu?",
       "message": "Pesan",
-      "messagePlaceholder": "Ceritakan kepada kami tentang proyek atau pertanyaan Anda...",
+      "messagePlaceholder": "Ceritakan tentang proyek atau pertanyaan Anda...",
       "send": "Kirim Pesan",
       "sending": "Mengirim...",
       "success": "Pesan berhasil dikirim! Kami akan segera menghubungi Anda.",
-      "error": "Gagal mengirim pesan. Silakan coba lagi."
+      "error": "Pesan gagal terkirim. Silakan coba lagi."
     },
     "info": {
       "office": "Lokasi Kantor",
@@ -198,7 +198,7 @@
   },
   "seo": {
     "companyName": "PT. Property Group Imperium",
-    "tagline": "Membangun Keunggulan, Membentuk Masa Depan",
-    "defaultDescription": "PT. Property Group Imperium adalah perusahaan pengembangan dan manajemen properti terkemuka yang memberikan keunggulan dalam real estat, konstruksi, dan pengembangan properti."
+    "tagline": "Membangun dengan Keunggulan, Membentuk Masa Depan",
+    "defaultDescription": "PT. Property Group Imperium adalah perusahaan developer dan manajemen properti terkemuka yang menghadirkan solusi berkualitas dalam real estat, konstruksi, dan pengembangan properti."
   }
 }
