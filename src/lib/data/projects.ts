@@ -92,6 +92,22 @@ export const projects: Project[] = [
     status: "ongoing",
     featured: false,
   },
+  {
+    id: "20",
+    slug: "mega-saentis-warehouse",
+    title: "Mega Saentis Warehouse",
+    businessUnit: "pgi-developer",
+    description:
+      "A warehouse development in the Mega Saentis area for modern logistics and storage, featuring efficient layouts, generous clear height, and industrial specifications for commercial tenants.",
+    location: "Medan, Indonesia",
+    images: [
+      "/images/projects/mega-saentis-warehouse-1.jpg",
+      "/images/projects/mega-saentis-warehouse-2.jpg",
+    ],
+    year: 2024,
+    status: "ongoing",
+    featured: false,
+  },
   // Featured Projects (Most Recent)
   {
     id: "1",
